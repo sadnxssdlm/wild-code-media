@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorgradient1: #B72193 (0%) (100%) - #5925E9 (100%) (100%)
+}
+
+:root {
+    --colorgradient2: #3D00EB (0%) (100%) - #9D1CA6 (100%) (100%)
+}
