@@ -20,4 +20,9 @@
 /*  Nav */
 li {
     list-style: none;
+    
 }
+a:hover {
+    var(--hover);
+}
+
