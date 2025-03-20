@@ -20,8 +20,40 @@
 /*  Nav */
 li {
     list-style: none;
-    
+
 }
+
 a:hover {
     var(--hover);
+}
+
+header {
+    background-image: url(/assets/img/background.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+bg-header {
+    background-image: url(/assets/img/images/background.jpg);
+    height: 20vh;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-hamburger {
+    width: 300px;
+    position: absolute;
+    margin: 1rem;
+
+
+}
+
+nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
 }
