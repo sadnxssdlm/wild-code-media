@@ -139,9 +139,7 @@ li {
 
 
 /* footer*/
-
 #ending {
-    background-color: var(--colorgradient1);
     display: flex;
     flex-direction: column;
     align-items: center;
