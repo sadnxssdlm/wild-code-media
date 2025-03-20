@@ -41,16 +41,6 @@ li {
     
 }
 
-
-
-
-
-
-
-
-
-
-
 /*  Main   */
 /* .Slider */
 .slider {
@@ -60,33 +50,53 @@ flex-direction: row;
 }
  
 #slider1{
-box-sizing: border-box;    
+background-position:center;
+background-size: cover;
+width:100%;
+padding-top: 30px;
+padding-bottom: 30px;
 padding-left: 30px;
-paddin
+padding-right: 30px;
 }
-
-
-
-
-
 
 /*  Stories  */
 
 
-.stories{
-    padding-left: ;
-    
+.story{
+    height: 10vh;
+    padding-left: 45px;
+    }
 
+
+
+
+/* posts*/
+
+.posts {
+    padding: 1vh;
+    text-decoration: none;
+
+}
+
+.username {
+    padding-left: 6vh;
 
 }
 
 
 
 
-/* posts
+.profile{
+    height: 5vh;
+}
+
+
+#laptopPicture{
+background-position: center;
+background-size: cover;
+width: 100%;
+}
 
 
 
-
-
-/* footer
+/* footer*/
