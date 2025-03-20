@@ -5,72 +5,86 @@
 }
 
 :root {
-    --colorgradient1: linear-gradient(90deg, #B72193 0%, #5925E9 100%);  /*Gradiant 1*/
-    --colorgradient2: linear-gradient(90deg, #3D00EB 0%, #9D1CA6 100%) /*Gradiant 2*/
-    --hover: #63c7b2 /*Couleur d'un element quand on passe la souris dessus */
+    --colorgradient1: linear-gradient(90deg, #B72193 0%, #5925E9 100%);
+    /*Gradiant 1*/
+    --colorgradient2: linear-gradient(90deg, #3D00EB 0%, #9D1CA6 100%)
+        /*Gradiant 2*/
+        --hover: color: #63c7b2
+        /*Couleur d'un element quand on passe la souris dessus */
+        --bgpost: #D9D9D9;
 }
+
 .bg-header {
     background-image: url(/assets/img/images/background.jpg);
     height: 20vh;
-    
+
     background-size: cover;
     background-position: center;
 }
+
 .menu-hamburger {
     width: 35px;
     position: absolute;
     margin: 1rem;
-    
-    
+
+
 }
+
 nav {
     position: absolute;
     display: flex;
     flex-direction: column;
     color: white;
-    
+
 }
 
 body {
-    background-color:#E6E6E6;
+    background-color: #E6E6E6;
 
 }
+
 /*  Nav */
 li {
     list-style: none;
-    
+
 }
 
 /*  Main   */
 /* .Slider */
 .slider {
-display: flex;
-flex-direction: row;
+    display: flex;
+    flex-direction: row;
 
 }
- 
-#slider1{
-background-position:center;
-background-size: cover;
-width:100%;
-padding-top: 30px;
-padding-bottom: 30px;
-padding-left: 30px;
-padding-right: 30px;
+
+#slider1 {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /*  Stories  */
 
 
-.story{
+.story {
     height: 10vh;
     padding-left: 45px;
-    }
+    padding-bottom: 5px;
+}
 
 
 
 
 /* posts*/
+
+.profile-container {
+    display: flex;
+}
+
 
 .posts {
     padding: 1vh;
@@ -79,24 +93,58 @@ padding-right: 30px;
 }
 
 .username {
-    padding-left: 6vh;
+    padding-top: 1vh;
+    padding-left: 1vh;
+    font-size: medium;
 
 }
 
-
-
-
-.profile{
+.profile {
     height: 5vh;
 }
 
+.text {
+    background-color: #D9D9D9;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
 
-#laptopPicture{
-background-position: center;
-background-size: cover;
-width: 100%;
+.reacts {
+    padding-top: 1vh;
+    padding-left: 45vh;
+}
+
+#laptopPicture {
+    background-position: center;
+    background-size: cover;
+    width: 90%;
+
+}
+
+#messagesWilders{
+    text-align: center;
+}
+
+.video {
+    
 }
 
 
+/* wilders*/
+#wilder {
+    border: solid rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 20px;
+}
+
 
 /* footer*/
+
+#ending {
+    background-color: var(--colorgradient1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
