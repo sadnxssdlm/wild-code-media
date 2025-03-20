@@ -5,22 +5,49 @@
 }
 
 :root {
-    --colorgradient1: #B72193 (0%) (100%) - #5925E9 (100%) (100%)
+    --colorgradient1: linear-gradient(90deg, #B72193 0%, #5925E9 100%);
+    /*Gradiant 1*/
+    --colorgradient2: linear-gradient(90deg, #3D00EB 0%, #9D1CA6 100%)
+        /*Gradiant 2*/
+        --hover: color: #63c7b2
+        /*Couleur d'un element quand on passe la souris dessus */
+        --bgpost: #D9D9D9;
 }
 
-:root {
-    --colorgradient2: #3D00EB (0%) (100%) - #9D1CA6 (100%) (100%)
+.bg-header {
+    background-image: url(/assets/img/images/background.jpg);
+    height: 20vh;
+
+    background-size: cover;
+    background-position: center;
 }
 
-/*  color quand on passe la souris dessus */
-:root {
-    --hover: #63c7b2
+.menu-hamburger {
+    width: 35px;
+    position: absolute;
+    margin: 1rem;
+
+
+}
+
+nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+
+body {
+    background-color: #E6E6E6;
+
 }
 
 /*  Nav */
 li {
     list-style: none;
 
+<<<<<<< HEAD
 }
 
 a:hover {
@@ -57,3 +84,106 @@ nav {
     color: white;
 
 }
+=======
+}
+
+/*  Main   */
+/* .Slider */
+.slider {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#slider1 {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*  Stories  */
+
+
+.story {
+    height: 10vh;
+    padding-left: 45px;
+    padding-bottom: 5px;
+}
+
+
+
+
+/* posts*/
+
+.profile-container {
+    display: flex;
+}
+
+
+.posts {
+    padding: 1vh;
+    text-decoration: none;
+
+}
+
+.username {
+    padding-top: 1vh;
+    padding-left: 1vh;
+    font-size: medium;
+
+}
+
+.profile {
+    height: 5vh;
+}
+
+.text {
+    background-color: #D9D9D9;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.reacts {
+    padding-top: 1vh;
+    padding-left: 45vh;
+}
+
+#laptopPicture {
+    background-position: center;
+    background-size: cover;
+    width: 90%;
+
+}
+
+#messagesWilders{
+    text-align: center;
+}
+
+.video {
+    
+}
+
+
+/* wilders*/
+#wilder {
+    border: solid rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+/* footer*/
+
+#ending {
+    background-color: var(--colorgradient1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+>>>>>>> 29f47dc9066435b69971f0d3bbf4e726582eff16

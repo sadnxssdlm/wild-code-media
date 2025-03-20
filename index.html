@@ -16,6 +16,7 @@
 
 <body>
     <header>
+        <a href="assets/img/icons/burger-bar.png" class="menu-hamburger" alt="menu hamburger"></a>
         <nav>
             <div>
                 <img src="/assets/img/burger-bar.png" alt="burger button" classe="menu-hamburger">
@@ -28,19 +29,23 @@
                 <li><a href="log-out">Log Out</a></li>
             </ul>
         </nav>
+<<<<<<< HEAD
 
+=======
+        <div class="bg-header"></div>
+>>>>>>> 29f47dc9066435b69971f0d3bbf4e726582eff16
         <h1> </h1>
     </header>
 
     <main>
         <!--Slider-->
-        <div id="slider">
-            <img src="" alt="">
-            <div id="precedent" onclick="ChangeSlide(-1)">&lt;</div>
-            <div id="suivant" onclick="ChangeSlide(0)">&lt;</div>
+        <div class="slider">
+            <img id=slider1 src="assets/img/images/slider1.png" alt="Photo de NVDIA">
+
         </div>
         <!--Story-->
 
+<<<<<<< HEAD
         <section>
             <article id="post-1">
                 <img src="" alt="">
@@ -77,11 +82,75 @@
                 <img src="icons" alt="">
                 <img src="icons" alt="">
                 <img src="icons" alt="">
+=======
+        <div id="stories">
+            <img class="story" src="assets/img/images/pp-one.png" alt="Story 1 ">
+            <img class="story" src="assets/img/images/pp-two.png" alt="Story 2">
+            <img class="story" src="assets/img/images/pp-three.png" alt="Story 3">
+        </div>
+
+
+
+        <!--Posts-->
+        <section class="posts">
+            <article id="post-1">
+                <div class="profile-container">
+                    <img class="profile" src="assets/img/images/pp-three.png" alt="A John Doe Profile Picture">
+                    <h2 class="username">Joe Doe</h2>
+                </div>
+
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Modi eius in dignissimos quibusdam consequatur impedit
+                    asperiores laboriosam necessitatibus quaerat aperiam.
+                    Consectetur ipsam dolor minima blanditiis perspiciatis
+                    enim sequi ab saepe.</p>
+
+                <div class="reacts">
+                    <img id="like" src="assets/img/icons/coeur.png" alt="Like icon">
+                    <img id="comment" src="assets/img/icons/commenter.png" alt="Comment icon">
+                    <img id="share" src="assets/img/icons/envoyer.png" alt="Share icon">
+                </div>
+            </article>
+
+            <article id="post-2">
+                <div class="profile-container">
+                    <img class="profile" src="assets/img/images/pp-one.png" alt="FA Jane Doe Profile Picture">
+                    <h2 class="username">Jane Doe</h2>
+                </div>
+
+                <img id="laptopPicture" src="assets/img/images/post2.jpg" alt="Laptop">
+                <div class="reacts">
+                    <img id="like" src="assets/img/icons/coeur.png" alt="Like icon">
+                    <img id="comment" src="assets/img/icons/commenter.png" alt="Comment icon">
+                    <img id="share" src="assets/img/icons/envoyer.png" alt="Share icon">
+                </div>
+            </article>
+
+            <article id="post-3">
+                <div class="profile-container">
+                    <img class="profile" src="assets/img/images/pp-two.png" alt="A Ayoub Doe Profile Picture">
+                    <h2 class="username">Ayoub Doe</h2>
+                </div>
+                <div class="video">
+                    <iframe width="325" height="315" src="https://www.youtube.com/embed/fvWZ2kjTo-Q?si=-tt4PzqP87NI_YLo"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="reacts">
+                    <img id="like" src="assets/img/icons/coeur.png" alt="Like icon">
+                    <img id="comment" src="assets/img/icons/commenter.png" alt="Comment icon">
+                    <img id="share" src="assets/img/icons/envoyer.png" alt="Share icon">
+                </div>
+>>>>>>> 29f47dc9066435b69971f0d3bbf4e726582eff16
             </article>
         </section>
 
+        <!--Message des Wilders-->
+        <h2 id="messagesWilders">Messages des wilders</h2>
+
         <div id="wilder">
-            <!--Message des Wilders-->
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Impedit cumque ab rem nihil, cupiditate id, quam vitae
                 non fugiat ipsum et eos animi beatae nemo
@@ -94,11 +163,11 @@
     <script src="/assets/js/script.js"></script>
 </body>
 
-<footer>
+<footer id="ending">
     <img src="" alt="Logo de WCM">
-    <ul>
-        <li><a href="#"></a>Mentionslégales</li>
-        <li><a href="#"></a> A propos</li>
+    <ul id="aPropos">
+        <li><a href="#"></a>Mentions légales</li>
+        <li><a href="#"></a>A propos</li>
         <li><a href="#">Conditions d'utilisation</a></li>
     </ul>
 
