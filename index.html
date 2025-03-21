@@ -1,134 +1,184 @@
 <!DOCTYPE html>
 
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Wild Code Media</title>
 
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <a href="assets/img/icons/burger-bar.png" class="menu-hamburger" alt="menu hamburger"></a>
-        <nav>
-            <div class="logo"> <a href="#">logo WCM</a></div>
-            <ul class="links">
-                <li><a href="home">Accueil</a></li>
-                <li><a href="profil">Profil</a></li>
-                <li><a href="search">Search</a></li>
-                <li><a href="log-out">Log Out</a></li>
-            </ul>
-        </nav>
-        <div class="bg-header"></div>
-        <h1> </h1>
+      <a
+        href="assets/img/icons/burger-bar.png"
+        class="menu-hamburger"
+        alt="menu hamburger"
+      ></a>
+      <nav>
+        <div class="logo"><a href="#">logo WCM</a></div>
+        <ul class="links">
+          <li><a href="home">Accueil</a></li>
+          <li><a href="profil">Profil</a></li>
+          <li><a href="search">Search</a></li>
+          <li><a href="log-out">Log Out</a></li>
+        </ul>
+      </nav>
+      <div class="bg-header"></div>
+      <h1></h1>
     </header>
 
     <main>
-        <!--Slider-->
-        <div class="slider">
-            <img id=slider1 src="assets/img/images/slider1.png" alt="Photo de NVDIA">
+      <!--Slider-->
+      <div class="slider">
+        <img
+          id="slider1"
+          src="assets/img/images/slider1.png"
+          alt="Photo de NVDIA"
+        />
+      </div>
+      <!--Story-->
 
-        </div>
-        <!--Story-->
+      <div id="stories">
+        <img class="story" src="assets/img/images/pp-one.png" alt="Story 1 " />
+        <img class="story" src="assets/img/images/pp-two.png" alt="Story 2" />
+        <img class="story" src="assets/img/images/pp-three.png" alt="Story 3" />
+      </div>
 
-        <div id="stories">
-            <img class="story" src="assets/img/images/pp-one.png" alt="Story 1 ">
-            <img class="story" src="assets/img/images/pp-two.png" alt="Story 2">
-            <img class="story" src="assets/img/images/pp-three.png" alt="Story 3">
-        </div>
+      <!--Posts-->
+      <section class="posts">
+        <article id="post-1">
+          <div class="profile-container">
+            <img
+              class="profile"
+              src="assets/img/images/pp-three.png"
+              alt="A John Doe Profile Picture"
+            />
+            <h2 class="username">Joe Doe</h2>
+          </div>
 
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eius
+            in dignissimos quibusdam consequatur impedit asperiores laboriosam
+            necessitatibus quaerat aperiam. Consectetur ipsam dolor minima
+            blanditiis perspiciatis enim sequi ab saepe.
+          </p>
 
+          <div class="reacts">
+            <img id="like" src="assets/img/icons/coeur.png" alt="Like icon" />
+            <img
+              id="comment"
+              src="assets/img/icons/commenter.png"
+              alt="Comment icon"
+            />
+            <img
+              id="share"
+              src="assets/img/icons/envoyer.png"
+              alt="Share icon"
+            />
+          </div>
+        </article>
 
-        <!--Posts-->
-        <section class="posts">
-            <article id="post-1">
-                <div class="profile-container">
-                    <img class="profile" src="assets/img/images/pp-three.png" alt="A John Doe Profile Picture">
-                    <h2 class="username">Joe Doe</h2>
-                </div>
+        <article id="post-2">
+          <div class="profile-container">
+            <img
+              class="profile"
+              src="assets/img/images/pp-one.png"
+              alt="FA Jane Doe Profile Picture"
+            />
+            <h2 class="username">Jane Doe</h2>
+          </div>
 
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Modi eius in dignissimos quibusdam consequatur impedit
-                    asperiores laboriosam necessitatibus quaerat aperiam.
-                    Consectetur ipsam dolor minima blanditiis perspiciatis
-                    enim sequi ab saepe.</p>
+          <img
+            id="laptopPicture"
+            src="assets/img/images/post2.jpg"
+            alt="Laptop"
+          />
+          <div class="reacts">
+            <img id="like" src="assets/img/icons/coeur.png" alt="Like icon" />
+            <img
+              id="comment"
+              src="assets/img/icons/commenter.png"
+              alt="Comment icon"
+            />
+            <img
+              id="share"
+              src="assets/img/icons/envoyer.png"
+              alt="Share icon"
+            />
+          </div>
+        </article>
 
-                <div class="reacts">
-                    <img id="like" src="assets/img/icons/coeur.png" alt="Like icon">
-                    <img id="comment" src="assets/img/icons/commenter.png" alt="Comment icon">
-                    <img id="share" src="assets/img/icons/envoyer.png" alt="Share icon">
-                </div>
-            </article>
+        <article id="post-3">
+          <div class="profile-container">
+            <img
+              class="profile"
+              src="assets/img/images/pp-two.png"
+              alt="A Ayoub Doe Profile Picture"
+            />
+            <h2 class="username">Ayoub Doe</h2>
+          </div>
+          <div class="video">
+            <iframe
+              width="325"
+              height="315"
+              src="https://www.youtube.com/embed/fvWZ2kjTo-Q?si=-tt4PzqP87NI_YLo"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
 
-            <article id="post-2">
-                <div class="profile-container">
-                    <img class="profile" src="assets/img/images/pp-one.png" alt="FA Jane Doe Profile Picture">
-                    <h2 class="username">Jane Doe</h2>
-                </div>
+          <div class="reacts">
+            <img id="like" src="assets/img/icons/coeur.png" alt="Like icon" />
+            <img
+              id="comment"
+              src="assets/img/icons/commenter.png"
+              alt="Comment icon"
+            />
+            <img
+              id="share"
+              src="assets/img/icons/envoyer.png"
+              alt="Share icon"
+            />
+          </div>
+        </article>
+      </section>
 
-                <img id="laptopPicture" src="assets/img/images/post2.jpg" alt="Laptop">
-                <div class="reacts">
-                    <img id="like" src="assets/img/icons/coeur.png" alt="Like icon">
-                    <img id="comment" src="assets/img/icons/commenter.png" alt="Comment icon">
-                    <img id="share" src="assets/img/icons/envoyer.png" alt="Share icon">
-                </div>
-            </article>
+      <!--Message des Wilders-->
+      <h2 id="messagesWilders">Messages des wilders</h2>
 
-            <article id="post-3">
-                <div class="profile-container">
-                    <img class="profile" src="assets/img/images/pp-two.png" alt="A Ayoub Doe Profile Picture">
-                    <h2 class="username">Ayoub Doe</h2>
-                </div>
-                <div class="video">
-                    <iframe width="325" height="315" src="https://www.youtube.com/embed/fvWZ2kjTo-Q?si=-tt4PzqP87NI_YLo"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-
-                <div class="reacts">
-                    <img id="like" src="assets/img/icons/coeur.png" alt="Like icon">
-                    <img id="comment" src="assets/img/icons/commenter.png" alt="Comment icon">
-                    <img id="share" src="assets/img/icons/envoyer.png" alt="Share icon">
-                </div>
-            </article>
-        </section>
-
-        <!--Message des Wilders-->
-        <h2 id="messagesWilders">Messages des wilders</h2>
-
-        <div id="wilder">
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Impedit cumque ab rem nihil, cupiditate id, quam vitae
-                non fugiat ipsum et eos animi beatae nemo
-                tenetur laudantium, eligendi assumenda consequatur.</p>
-        </div>
-
+      <div id="wilder">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+          cumque ab rem nihil, cupiditate id, quam vitae non fugiat ipsum et eos
+          animi beatae nemo tenetur laudantium, eligendi assumenda consequatur.
+        </p>
+      </div>
     </main>
 
     <!--JavaScript-->
     <script src="/assets/js/script.js"></script>
-</body>
+  </body>
 
-<footer id="ending">
-    <img src="" alt="Logo de WCM">
+  <footer id="ending">
+    <img src="" alt="Logo de WCM" />
     <ul id="aPropos">
-        <li><a href="#"></a>Mentions légales</li>
-        <li><a href="#"></a>A propos</li>
-        <li><a href="#">Conditions d'utilisation</a></li>
+      <li><a href="#"></a>Mentions légales</li>
+      <li><a href="#"></a>A propos</li>
+      <li><a href="#">Conditions d'utilisation</a></li>
     </ul>
 
-    <p>&copy;2025 Wild Code Media </p>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/commentaire" title="commentaire icônes">Commentaire icônes
-        créées par JessHG - Flaticon</a>
-
-</footer>
-
+    <p>&copy;2025 Wild Code Media</p>
+    <a
+      href="https://www.flaticon.com/fr/icones-gratuites/commentaire"
+      title="commentaire icônes"
+      >Commentaire icônes créées par JessHG - Flaticon</a
+    >
+  </footer>
 </html>
