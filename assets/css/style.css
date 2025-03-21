@@ -9,9 +9,7 @@
     /*Gradiant 1*/
     --colorgradient2: linear-gradient(90deg, #3D00EB 0%, #9D1CA6 100%)
         /*Gradiant 2*/
-        <<<<<<< HEAD --hover: #63c7b2
-        /*Couleur d'un element quand on passe la souris dessus */
-        =======--hover: color: #63c7b2
+        --hover: color: #63c7b2
         /*Couleur d'un element quand on passe la souris dessus */
         --bgpost: #D9D9D9;
 }
@@ -79,6 +77,8 @@ li {
 }
 
 
+
+
 /* posts*/
 
 .profile-container {
@@ -107,19 +107,6 @@ li {
     background-color: #D9D9D9;
     padding-top: 1vh;
     padding-bottom: 1vh;
-}
-
-HEAD #laptopPicture {
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-}
-
-
-#wilder {
-    border: box;
-    border: solid;
-
 }
 
 .reacts {
