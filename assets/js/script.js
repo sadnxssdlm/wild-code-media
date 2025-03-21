@@ -28,6 +28,8 @@ sliderHtml.addEventListener("click", function () {
 /*POSTS */
 
 
+
+
 /*WILDERSMSG */
 
 
