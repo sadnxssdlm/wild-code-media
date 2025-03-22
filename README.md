@@ -15,7 +15,11 @@ As part of our training, we collaborated on a group project to create a social n
 # Wireframe
 A detailed wireframe was created to plan the layout and user experience of the social wall before development.
 
+<<<<<<< HEAD
 ![Wireframe :](https://github.com/sadnxssdlm/wild-code-media/blob/main/wildwf.png)
+=======
+![Wireframe :](https://github.com/sadnxssdlm/wild-code-media/blob/main/wireframewcm.png)
+>>>>>>> 3d295d58f21bad2ae24ff87266a0bd5aa6b2d49b
 
 # Preview
 Below is a preview of the completed project:
