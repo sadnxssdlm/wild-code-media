@@ -1,6 +1,12 @@
 
 /* NAVBAR */
-/* menu burger : click 
+/* menu burger : click */
+const menuHamburger = document.querySelector(".menu-hamburger")
+const navLinks = document.querySelector(".nav-links")
+
+menuHamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('mobile-menu')
+})
 /*HEADER */
 
 /*SLIDER */
@@ -19,12 +25,9 @@ sliderHtml.addEventListener("click", function () {
 
     sliderHtml.src = slider[index];
 });
-const menuHamburger = document.querySelector(".menu-hamburger")
-const navLinks = document.querySelector(".nav-links")
 
-menuHamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('mobile-menu')
-})
+
+
 
 
 
