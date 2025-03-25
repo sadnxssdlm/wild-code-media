@@ -233,6 +233,19 @@ body {
 
     }
 
+
+
+#btnh1{
+       border: black; 
+    background: transparent;
+    font-size: 16px;
+    outline:none;
+    color: grey;
+}
+
+.btn i:hover {
+    cursor: pointer;
+}
 .reacts {
     background-color: white;
     padding-top: 1vh;
@@ -241,7 +254,6 @@ body {
     flex-direction: row;
     align-items: center;
 }
-
 .reactspost2 {
     padding-left: 45vh;
     background-color: white;

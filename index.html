@@ -7,12 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Wild Code Media</title>
-
+    <script src="https://kit.fontawesome.com/b03f274dc8.js" crossorigin="anonymous"></script>    
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
 
+
+
+
   <body>
     <header>
+      <a
+        href="assets/img/icons/burger-bar.png"
+        class="menu-hamburger"
+        alt="menu hamburger"
+      ></a>
+      <nav>
+        <div class="logo"><a href="#">logo WCM</a></div>
+        <ul class="links">
+          <li><a href="home">Accueil</a></li>
+          <li><a href="profil">Profil</a></li>
+          <li><a href="search">Search</a></li>
+          <li><a href="log-out">Log Out</a></li>
+        </ul>
+      </nav>
+      <div class="bg-header"></div>
+      <h1></h1>
+    </header>
+
+    <main>
+      <!--Slider-->
+      <div class="slider">
+        <img
+          id="slider1"
+          src="assets/img/images/slider1.png"
+          alt="Photo de NVDIA"
+        />
+      </div>
+      <!--Story-->
+
 
         <a href="assets/img/icons/burger-bar.png" class="menu-hamburger" alt="menu hamburger"></a>
         <nav>
@@ -54,6 +86,7 @@
             <img id="slider2" src="https://www.blue-search.com/wp-content/uploads/2024/03/istockphoto-1322517295-612x612-1.jpg" alt="dev">
             <img id="slider3" src="https://www.cote-azur.cci.fr/app/uploads/2022/05/Veille.jpg" alt="photo tablette futuriste">
             <img id="slider4" src="https://media.istockphoto.com/id/1401461127/fr/photo/main-de-lhomme-daffaires-utilisant-le-smartphone-pour-le-courrier-%C3%A9lectronique-avec-alerte.jpg?s=612x612&w=0&k=20&c=yx7RSCbPWe9axBsaPnsXalRiCeaViJs7CGUWHj1qjog=" alt="personne qui recois un message sur son telephone avec une icone d'une enveloppe">
+          
 
       <div id="stories">
         <img class="story" src="assets/img/images/pp-one.png" alt="Story 1 " />
@@ -73,12 +106,96 @@
             <h2 class="username">Joe Doe</h2>
           </div>
 
+
           <p class="text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eius
             in dignissimos quibusdam consequatur impedit asperiores laboriosam
             necessitatibus quaerat aperiam. Consectetur ipsam dolor minima
             blanditiis perspiciatis enim sequi ab saepe.
           </p>
+
+          <div class="reacts">
+            <div class="buttonLike">
+              <button onclick="Toggle1()" id="btnh1"><i class="fas fa-heart"></i></button>
+              </div>
+            <img
+              id="comment"
+              src="assets/img/icons/commenter.png"
+              alt="Comment icon"
+            />
+            <img
+              id="share"
+              src="assets/img/icons/envoyer.png"
+              alt="Share icon"
+            />
+          </div>
+        </article>
+
+        <article id="post-2">
+          <div class="profile-container">
+            <img
+              class="profile"
+              src="assets/img/images/pp-one.png"
+              alt="FA Jane Doe Profile Picture"
+            />
+            <h2 class="username">Jane Doe</h2>
+          </div>
+
+          <img
+            id="laptopPicture"
+            src="assets/img/images/post2.jpg"
+            alt="Laptop"
+          />
+          <div class="reacts">
+          
+            
+            <img id="like" src="assets/img/icons/coeur.png" alt="Like icon" />
+            <img
+              id="comment"
+              src="assets/img/icons/commenter.png"
+              alt="Comment icon"
+            />
+            <img
+              id="share"
+              src="assets/img/icons/envoyer.png"
+              alt="Share icon"
+            />
+          </div>
+        </article>
+
+
+
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eius
+            in dignissimos quibusdam consequatur impedit asperiores laboriosam
+            necessitatibus quaerat aperiam. Consectetur ipsam dolor minima
+            blanditiis perspiciatis enim sequi ab saepe.
+          </p>
+
+
+
+        <article id="post-3">
+          <div class="profile-container">
+            <img
+              class="profile"
+              src="assets/img/images/pp-two.png"
+              alt="A Ayoub Doe Profile Picture"
+            />
+            <h2 class="username">Ayoub Doe</h2>
+          </div>
+          <div class="video">
+            <iframe
+              width="325"
+              height="315"
+              src="https://www.youtube.com/embed/fvWZ2kjTo-Q?si=-tt4PzqP87NI_YLo"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+
 
           <div class="reacts">
             <img
@@ -134,6 +251,24 @@
           </div>
         </article>
 
+
+
+        
+        </article>
+      </section>
+
+        <!--Message des Wilders-->
+        <h2 id="messagesWilders">Messages des wilders</h2>
+
+        <div id="wilder">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Impedit cumque ab rem nihil, cupiditate id, quam vitae
+                non fugiat ipsum et eos animi beatae nemo
+                tenetur laudantium, eligendi assumenda consequatur.</p>
+        </div>
+
+
+
         <article id="post-3">
           <div class="profile-container">
             <img
@@ -187,25 +322,64 @@
       </div>
     </main>
 
+
+    </main>
     <!--JavaScript-->
     <script src="/assets/js/script.js"></script>
+
+
+    
+  </body>
+
+
+  <footer id="ending">
+    <img src="" alt="Logo de WCM" />
+    <ul id="aPropos">
+      <li><a href="#"></a>Mentions légales</li>
+      <li><a href="#"></a>A propos</li>
+      <li><a href="#">Conditions d'utilisation</a></li>
+    </ul>
+
+
+    <p>&copy;2025 Wild Code Media</p>
+    <a
+      href="https://www.flaticon.com/fr/icones-gratuites/commentaire"
+      title="commentaire icônes"
+      >Commentaire icônes créées par JessHG - Flaticon</a
+    >
+  </footer>
+</html>
+
+
   </body>
 
   <footer class="ending">
     <img src="" alt="Logo de WCM" />
     <ul id="aPropos">
+
+  </body>
+
+  <footer class="ending">
+    <img src="" alt="Logo de WCM" />
+    <ul id="aPropos">
+
       <li><a href="#"></a>Mentions légales |</li>
       <li><a href="#"></a> A propos |</li>
       <li><a href="#"></a> Conditions d'utilisation</li>
     </ul>
     <div class="credits">
-      
+
       <p>&copy;2025 Wild Code Media</p>
       <a
         href="https://www.flaticon.com/fr/icones-gratuites/commentaire"
         title="commentaire icônes"
         >Commentaire icônes créées par JessHG - Flaticon</a
       >
+
+    <div class="credits">
+        <p>&copy;2025 Wild Code Media </p>
+        <a href="https://www.flaticon.com/fr/icones-gratuites/commentaire" title="commentaire icônes">Commentaire icônes
+            créées par JessHG - Flaticon</a>
 
     </div>
   </footer>
