@@ -1,716 +1,678 @@
-    /* version mobile */
-
-    @media screen and (max-width: 768px) {
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --colorgradient1: linear-gradient(90deg, #B72193 0%, #5925E9 100%);
-            /*Gradiant 1*/
-            --colorgradient2: linear-gradient(90deg, #3D00EB 0%, #9D1CA6 100%)
-                /*Gradiant 2*/
-                --hover: color: #63c7b2
-                /*Couleur d'un element quand on passe la souris dessus */
-                --bgpost: #D9D9D9;
-        }
-
-
-
-
-
-        .bg-header {
-            background-image: url(/assets/img/images/background.jpg);
-            height: 20vh;
-
-            background-size: cover;
-            background-position: center;
-        }
-
-        .menu-hamburger {
-            width: 35px;
-            position: absolute;
-            margin: 1rem;
-
-            @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
-        }
-
-        :root {
-            /*Gradiant 1*/
-            --color-gradient1: linear-gradient(90deg, #B72193 0%, #5925E9 100%);
-            /*Gradiant 2*/
-            --colorgradient2: linear-gradient(90deg, #3D00EB 0%, #9D1CA6 100%)
-                /*Couleur d'un element quand on passe la souris dessus */
-                --hover: color: #63c7b2
-                /*Background color des posts*/
-                --bgpost: #D9D9D9;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Exo 2", sans-serif;
-        }
-
-        /*Header*/
-        .bg-header {
-            background-image: url(/assets/img/images/background.jpg);
-            height: 20vh;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .logo-WCM {
-            height: 13vh;
-            padding-top: 2vh;
-            height: 8vh;
-            right: 3vh;
-            position: absolute;
-        }
-
-        .logo-acceuil,
-        .logo-user,
-        .logo-search,
-        .logo-disconnection {
-            height: 4.5vh;
-        }
-
-        .logo-nav {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            margin-right: 1vh;
-            padding-bottom: 4vh;
-            padding-left: 10vh;
-        }
-
-        .home,
-        .profil,
-        .search,
-        .log-out {
-            list-style: none;
-            color: white;
-            text-decoration: none;
-            font-size: 2rem;
-            margin-bottom: 5vh;
-            padding-left: 2vh;
-        }
+      @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+      :root {
+          --colorgradient1: linear-gradient(90deg, #B72193 0%, #5925E9 100%);
+          /*Gradiant 1*/
+          --colorgradient2: linear-gradient(90deg, #3D00EB 0%, #9D1CA6 100%)
+              /*Gradiant 2*/
+              --hover: color: #63c7b2
+              /*Couleur d'un element quand on passe la souris dessus */
+              --bgpost: #D9D9D9;
+      }
+
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      /* version mobile */
+
+      @media screen and (max-width: 768px) {
+
+
+          /*Header*/
+          .bg-header {
+              background-image: url(/assets/img/images/background.jpg);
+              height: 20vh;
+              background-size: cover;
+              background-position: center;
+          }
+
+          .logo-WCM {
+              height: 13vh;
+              padding-top: 2vh;
+              height: 8vh;
+              right: 3vh;
+              position: absolute;
+          }
+
+          .logo-acceuil,
+          .logo-user,
+          .logo-search,
+          .logo-disconnection {
+              height: 4.5vh;
+          }
+
+          .logo-nav {
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+              margin-right: 1vh;
+              padding-bottom: 4vh;
+              padding-left: 10vh;
+          }
+
+          .home,
+          .profil,
+          .search,
+          .log-out {
+              list-style: none;
+              color: white;
+              text-decoration: none;
+              font-size: 2rem;
+              margin-bottom: 5vh;
+              padding-left: 2vh;
+          }
+
+          .menu-hamburger {
+              width: 9vh;
+              position: absolute;
+              left: 1.5vh;
+              top: 1.5vh;
+              display: block;
+          }
+
+          nav {
+              position: absolute;
+              display: flex;
+              padding: 0 1rem;
+          }
+
+          .nav-links {
+              background: linear-gradient(90deg, #B72193 0%, #5925E9 100%);
+              width: 100%;
+              height: 50vh;
+              margin-left: -100vh;
+              transition: all 0.8s ease;
+          }
+
+          .mobile-menu {
+              margin-left: 0;
+          }
+
+          /*Body*/
+          body {
+              background-color: #E6E6E6;
+
+          }
+
+          nav {
+              position: absolute;
+              display: flex;
+              flex-direction: column;
+              color: white;
 
-        .menu-hamburger {
-            width: 9vh;
-            position: absolute;
-            left: 1.5vh;
-            top: 1.5vh;
-            display: block;
-        }
+          }
 
-        nav {
-            position: absolute;
-            display: flex;
-            padding: 0 1rem;
-        }
+          body {
+              background-color: #E6E6E6;
 
-        .nav-links {
-            background: linear-gradient(90deg, #B72193 0%, #5925E9 100%);
-            width: 100%;
-            height: 50vh;
-            margin-left: -100vh;
-            transition: all 0.8s ease;
-        }
+          }
 
-        .mobile-menu {
-            margin-left: 0;
-        }
+          /*  Nav */
+          li {
+              list-style: none;
 
-        /*Body*/
-        body {
-            background-color: #E6E6E6;
+          }
 
-        }
+          /*  Main   */
+          /* .Slider */
+          .slider {
+              display: flex;
+              flex-direction: row;
 
-        nav {
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            color: white;
+          }
 
-        }
+          #slider1 {
+              background-position: center;
+              background-size: cover;
+              width: 100%;
+              padding-top: 30px;
+              padding-bottom: 30px;
+              padding-left: 30px;
+              padding-right: 30px;
+          }
 
-        body {
-            background-color: #E6E6E6;
+          #slider2 {
+              display: none;
+          }
 
-        }
+          #slider3 {
+              display: none;
+          }
 
-        /*  Nav */
-        li {
-            list-style: none;
+          #slider4 {
+              display: none;
+          }
 
-        }
+          /*  Stories  */
 
-        /*  Main   */
-        /* .Slider */
-        .slider {
-            display: flex;
-            flex-direction: row;
 
-        }
+          .story {
+              height: 10vh;
+              padding-left: 45px;
+              padding-bottom: 5px;
+          }
 
-        #slider1 {
-            background-position: center;
-            background-size: cover;
-            width: 100%;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            padding-left: 30px;
-            padding-right: 30px;
-        }
 
-        #slider2 {
-            display: none;
-        }
 
-        #slider3 {
-            display: none;
-        }
+          /* posts*/
 
-        #slider4 {
-            display: none;
-        }
+          .profile-container {
+              background-color: white;
+              display: flex;
+          }
 
-        /*  Stories  */
 
+          .posts {
+              padding: 1vh;
+              text-decoration: none;
+          }
 
-        .story {
-            height: 10vh;
-            padding-left: 45px;
-            padding-bottom: 5px;
-        }
 
 
+          .username {
+              padding-top: 1vh;
+              padding-left: 1vh;
+              font-size: medium;
+          }
 
-        /* posts*/
 
-        .profile-container {
-            background-color: white;
-            display: flex;
-        }
+          /* posts*/
 
+          .profile-container {
+              display: flex;
+          }
 
-        .posts {
-            padding: 1vh;
-            text-decoration: none;
-        }
 
+          .posts {
+              padding: 1vh;
+              text-decoration: none;
 
+          }
 
-        .username {
-            padding-top: 1vh;
-            padding-left: 1vh;
-            font-size: medium;
-        }
+          .username {
+              padding-top: 1vh;
+              padding-left: 1vh;
+              font-size: medium;
 
+          }
 
-        /* posts*/
+          .reacts {
+              background-color: white;
+              padding-top: 1vh;
+              padding-left: 45vh;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+          }
+
+          .reactspost2 {
+              padding-left: 45vh;
+              background-color: white;
+          }
 
-        .profile-container {
-            display: flex;
-        }
+          .reactspost3 {
+              padding-left: 45vh;
+              background-color: white;
+          }
 
+          #laptopPicture {
+              background-position: center;
+              background-size: cover;
+              width: 55vh;
 
-        .posts {
-            padding: 1vh;
-            text-decoration: none;
+          }
 
-        }
+          .video {
+              height: 40vh;
+              width: 55vh;
+          }
 
-        .username {
-            padding-top: 1vh;
-            padding-left: 1vh;
-            font-size: medium;
+          .profile {
+              height: 5vh;
+          }
 
-        }
+          .text {
+              background-color: #D9D9D9;
+              padding-top: 1vh;
+              padding-bottom: 1vh;
+          }
 
-        .reacts {
-            background-color: white;
-            padding-top: 1vh;
-            padding-left: 45vh;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
+          .reacts {
+              padding-top: 1vh;
+              padding-left: 45vh;
+          }
 
-        .reactspost2 {
-            padding-left: 45vh;
-            background-color: white;
-        }
+          #laptopPicture {
+              background-position: center;
+              background-size: cover;
+              width: 90%;
 
-        .reactspost3 {
-            padding-left: 45vh;
-            background-color: white;
-        }
+          }
 
-        #laptopPicture {
-            background-position: center;
-            background-size: cover;
-            width: 55vh;
+          #messagesWilders {
+              text-align: center;
+          }
 
-        }
+          /* wilders*/
+          #wilder {
+              border: solid rgb(0, 0, 0);
+              border-radius: 20px;
+              padding: 20px;
+          }
 
-        .video {
-            height: 40vh;
-            width: 55vh;
-        }
+          btnh1 {
+              border: black;
+              background: transparent;
+              font-size: 16px;
+              outline: none;
+              color: grey;
+          }
 
-        .profile {
-            height: 5vh;
-        }
+          .btn i:hover {
+              cursor: pointer;
+          }
 
-        .text {
-            background-color: #D9D9D9;
-            padding-top: 1vh;
-            padding-bottom: 1vh;
-        }
+          btnh1 {
+              border: black;
+              background: transparent;
+              font-size: 16px;
+              outline: none;
+              color: grey;
+          }
 
-        .reacts {
-            padding-top: 1vh;
-            padding-left: 45vh;
-        }
+          .btn i:hover {
+              cursor: pointer;
+          }
 
-        #laptopPicture {
-            background-position: center;
-            background-size: cover;
-            width: 90%;
+          .reacts {
+              background-color: white;
+              padding-top: 1vh;
+              padding-left: 45vh;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+          }
 
-        }
+          .reactspost2 {
+              padding-left: 45vh;
+              background-color: white;
+          }
 
-        #messagesWilders {
-            text-align: center;
-        }
+          /* footer*/
+          #ending {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
 
-        .video {}
 
 
-        /* wilders*/
-        #wilder {
-            border: solid rgb(0, 0, 0);
-            border-radius: 20px;
-            padding: 20px;
-        }
+          }
 
-        btnh1 {
-            border: black;
-            background: transparent;
-            font-size: 16px;
-            outline: none;
-            color: grey;
-        }
+          #messagesWilders {
+              text-align: center;
+          }
 
-        .btn i:hover {
-            cursor: pointer;
-        }
+      }
 
-        .reacts {
-            background-color: white;
-            padding-top: 1vh;
-            padding-left: 45vh;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
 
-        .reactspost2 {
-            padding-left: 45vh;
-            background-color: white;
-        }
 
 
-        /* footer*/
-        #ending {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+      /* version tablette  */
 
 
+      @media screen and (min-width: 768px) and (max-width: 992px) {
 
-        }
 
-        #messagesWilders {
-            #messagesWilders text-align: center;
 
-        }
+          .bg-header {
+              background-image: url(/assets/img/images/background.jpg);
+              height: 20vh;
+              background-size: cover;
+              background-position: center;
+          }
 
-    }
+          .menu-hamburger {
+              width: 35px;
+              position: absolute;
+              margin: 1rem;
 
 
+          }
 
+          nav {
+              position: absolute;
+              display: flex;
+              flex-direction: column;
+              color: white;
 
-    /* version tablette  */
+          }
 
+          body {
+              background-color: #E6E6E6;
 
-    @media screen and (min-width: 768px) and (max-width: 992px) {
+          }
 
+          /*  Nav */
+          li {
+              list-style: none;
 
+          }
 
-        .bg-header {
-            background-image: url(/assets/img/images/background.jpg);
-            height: 20vh;
-            background-size: cover;
-            background-position: center;
-        }
+          /*  Main   */
+          /* .Slider */
+          .slider {
+              display: flex;
+              flex-direction: row;
+          }
 
-        .menu-hamburger {
-            width: 35px;
-            position: absolute;
-            margin: 1rem;
 
 
-        }
+          #slider1 {
+              display: flex;
+              flex-direction: row;
+              background-position: center;
+              background-size: cover;
+              width: 45%;
+              padding-top: 30px;
+              padding-bottom: 30px;
+              padding-left: 25px;
+              padding-right: 15px;
 
-        nav {
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            color: white;
 
-        }
+          }
 
-        body {
-            background-color: #E6E6E6;
+          #slider2 {
 
-        }
+              background-position: center;
+              background-size: cover;
+              width: 45%;
+              padding-top: 30px;
+              padding-bottom: 30px;
+              padding-left: 15px;
+              padding-right: 10px;
+          }
 
-        /*  Nav */
-        li {
-            list-style: none;
+          #slider3 {
+              display: none;
+          }
 
-        }
+          #slider4 {
+              display: none;
+          }
 
-        /*  Main   */
-        /* .Slider */
-        .slider {
-            display: flex;
-            flex-direction: row;
-        }
 
 
+          /*  Stories  */
 
-        #slider1 {
-            display: flex;
-            flex-direction: row;
-            background-position: center;
-            background-size: cover;
-            width: 45%;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            padding-left: 25px;
-            padding-right: 15px;
 
+          .story {
+              height: 10vh;
+              padding-left: 45px;
+              padding-bottom: 5px;
+          }
 
-        }
 
-        #slider2 {
 
-            background-position: center;
-            background-size: cover;
-            width: 45%;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            padding-left: 15px;
-            padding-right: 10px;
-        }
 
-        #slider3 {
-            display: none;
-        }
+          /* posts*/
 
-        #slider4 {
-            display: none;
-        }
+          .profile-container {
+              display: flex;
+          }
 
 
+          .posts {
+              padding: 1vh;
+              text-decoration: none;
 
-        /*  Stories  */
+          }
 
+          .username {
+              padding-top: 1vh;
+              padding-left: 1vh;
+              font-size: medium;
 
-        .story {
-            height: 10vh;
-            padding-left: 45px;
-            padding-bottom: 5px;
-        }
+          }
 
+          .profile {
+              height: 5vh;
+          }
 
+          .text {
+              background-color: #D9D9D9;
+              padding-top: 1vh;
+              padding-bottom: 1vh;
+          }
 
+          .reacts {
+              justify-content: end;
+              display: flex;
+              flex-direction: row;
+              padding-top: 1vh;
+              padding-left: 45vh;
+          }
 
-        /* posts*/
+          #laptopPicture {
+              background-position: center;
+              background-size: cover;
+              width: 100%;
 
-        .profile-container {
-            display: flex;
-        }
+          }
 
+          #messagesWilders {
+              text-align: center;
+          }
 
-        .posts {
-            padding: 1vh;
-            text-decoration: none;
+          .video {}
 
-        }
 
-        .username {
-            padding-top: 1vh;
-            padding-left: 1vh;
-            font-size: medium;
+          /* wilders*/
+          #wilder {
+              border: solid rgb(0, 0, 0);
+              border-radius: 20px;
+              padding: 20px;
+          }
 
-        }
+          #ending {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
 
-        .profile {
-            height: 5vh;
-        }
+              /* footer*/
 
-        .text {
-            background-color: #D9D9D9;
-            padding-top: 1vh;
-            padding-bottom: 1vh;
-        }
+              #ending {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
 
-        .reacts {
-            justify-content: end;
-            display: flex;
-            flex-direction: row;
-            padding-top: 1vh;
-            padding-left: 45vh;
-        }
+              }
+          }
+      }
 
-        #laptopPicture {
-            background-position: center;
-            background-size: cover;
-            width: 100%;
 
-        }
+      @media screen and (min-width: 992px) {
 
-        text-align: center;
-    }
+          .bg-header {
+              background-image: url(/assets/img/images/background.jpg);
+              height: 35vh;
+              background-size: cover;
+              background-position: center;
+          }
 
-    .video {}
+          .menu-hamburger {
+              width: 35px;
+              position: absolute;
+              margin: 1rem;
 
 
-    /* wilders*/
-    #wilder {
-        border: solid rgb(0, 0, 0);
-        border-radius: 20px;
-        padding: 20px;
-    }
+          }
 
+          nav {
+              position: absolute;
+              display: flex;
+              flex-direction: column;
+              color: white;
 
-    /* footer*/
+          }
 
-    #ending {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+          body {
+              background-color: #E6E6E6;
 
-    }
-    }
+          }
 
+          /*  Nav */
+          li {
+              list-style: none;
 
+          }
 
+          /*  Main   */
+          /* .Slider */
+          .slider {
+              display: flex;
+              flex-direction: row;
+          }
 
 
 
+          #slider1 {
+              display: flex;
+              flex-direction: row;
+              background-position: center;
+              background-size: cover;
+              width: 25%;
 
-    /* desktop version */
 
+          }
 
+          #slider2 {
 
-    @media screen and (min-width: 992px) {
+              background-position: center;
+              background-size: cover;
+              width: 25%;
+              padding-left: 5px;
+              padding-right: 5px;
+          }
 
+          #slider3 {
+              background-position: center;
+              background-size: cover;
+              width: 25%;
+              padding-left: 5px;
+              padding-right: 5px;
+          }
 
+          #slider4 {
+              background-position: center;
+              background-size: cover;
+              width: 25%;
+          }
 
-        .bg-header {
-            background-image: url(/assets/img/images/background.jpg);
-            height: 35vh;
-            background-size: cover;
-            background-position: center;
-        }
 
-        .menu-hamburger {
-            width: 35px;
-            position: absolute;
-            margin: 1rem;
 
+          /*  Stories  */
 
-        }
 
-        nav {
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            color: white;
+          .story {
+              height: 15vh;
+              padding-left: 45px;
+              padding-bottom: 5px;
+              padding-top: 40px;
+          }
 
-        }
 
-        body {
-            background-color: #E6E6E6;
+          /* posts*/
 
-        }
+          .profile-container {
+              display: flex;
+              padding-top: 20px;
+          }
 
-        /*  Nav */
-        li {
-            list-style: none;
 
-        }
+          .posts {
+              padding: 1vh;
+              text-decoration: none;
 
-        /*  Main   */
-        /* .Slider */
-        .slider {
-            display: flex;
-            flex-direction: row;
-        }
+          }
 
+          .username {
+              padding-top: 1vh;
+              padding-left: 1vh;
+              font-size: x-large;
 
+          }
 
-        #slider1 {
-            display: flex;
-            flex-direction: row;
-            background-position: center;
-            background-size: cover;
-            width: 25%;
+          .profile {
+              height: 8vh;
+          }
 
+          .text {
+              background-color: #D9D9D9;
+              padding-top: 1vh;
+              padding-bottom: 1vh;
+              font-size: xx-large;
+          }
 
-        }
+          .reacts {
+              justify-content: end;
+              display: flex;
+              flex-direction: row;
+              padding-top: 1vh;
+              padding-left: 45vh;
+              height: 3vh;
+          }
 
-        #slider2 {
+          #laptopPicture {
+              background-position: center;
+              background-size: cover;
+              width: 100%;
 
-            background-position: center;
-            background-size: cover;
-            width: 25%;
-            padding-left: 5px;
-            padding-right: 5px;
-        }
+          }
 
-        #slider3 {
-            background-position: center;
-            background-size: cover;
-            width: 25%;
-            padding-left: 5px;
-            padding-right: 5px;
-        }
+          #messagesWilders {
+              text-align: center;
+              font-size: xx-large;
+          }
 
-        #slider4 {
-            background-position: center;
-            background-size: cover;
-            width: 25%;
-        }
 
+          /* wilders*/
+          #wilder {
+              border: solid rgb(0, 0, 0);
+              border-radius: 20px;
+              padding: 20px;
+              font-size: xx-large;
+          }
 
 
-        /*  Stories  */
+          /* footer*/
+          #ending {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              font-size: xx-large;
+              padding-top: 30px;
 
+          }
 
-        .story {
-            height: 15vh;
-            padding-left: 45px;
-            padding-bottom: 5px;
-            padding-top: 40px;
-        }
+          /* A propos */
+          #aPropos {
+              display: flex;
+              flex-direction: column;
+              align-items: inherit;
 
+          }
 
+          #ending {
+              background-color: var(--colorgradient1);
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+          }
 
-
-        /* posts*/
-
-        .profile-container {
-            display: flex;
-            padding-top: 20px;
-        }
-
-
-        .posts {
-            padding: 1vh;
-            text-decoration: none;
-
-        }
-
-        .username {
-            padding-top: 1vh;
-            padding-left: 1vh;
-            font-size: x-large;
-
-        }
-
-        .profile {
-            height: 8vh;
-        }
-
-        .text {
-            background-color: #D9D9D9;
-            padding-top: 1vh;
-            padding-bottom: 1vh;
-            font-size: xx-large;
-        }
-
-        .reacts {
-            justify-content: end;
-            display: flex;
-            flex-direction: row;
-            padding-top: 1vh;
-            padding-left: 45vh;
-            height: 3vh;
-        }
-
-        #laptopPicture {
-            background-position: center;
-            background-size: cover;
-            width: 100%;
-
-        }
-
-        #messagesWilders {
-            text-align: center;
-            font-size: xx-large;
-        }
-
-
-        .video {}
-
-
-        /* wilders*/
-        #wilder {
-            border: solid rgb(0, 0, 0);
-            border-radius: 20px;
-            padding: 20px;
-            font-size: xx-large;
-        }
-
-
-        /* footer*/
-        #ending {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-size: xx-large;
-            padding-top: 30px;
-
-        }
-
-        /* A propos */
-        #aPropos {
-            display: flex;
-            flex-direction: column;
-            align-items: inherit;
-
-        }
-
-        #ending {
-            background-color: var(--colorgradient1);
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-
-        #credits {
-            color: white;
-        }
-    }
+          #credits {
+              color: white;
+          }
+      }
