@@ -97,18 +97,7 @@
 
           }
 
-          nav {
-              position: absolute;
-              display: flex;
-              flex-direction: column;
-              color: white;
 
-          }
-
-          body {
-              background-color: #E6E6E6;
-
-          }
 
           /*  Nav */
           li {
@@ -197,7 +186,7 @@
               padding-left: 1vh;
               font-size: medium;
 
-<<<<<<< HEAD
+
         }
         .reacts {
             background-color: white;
@@ -207,38 +196,33 @@
             flex-direction: row;
             align-items: center;
         }
-
-        #likeicon{
-            width: 20px;
-            height: 20px;
-            background-color: transparent;
+        .btns, 
+        #comments {
+            position: absolute;
+            top: 216px;
+            left: 328px;
+        
         }
+        
+        .btn{
+            background: transparent;
+            border: none;
+            font-size: 16px;
+            outline:none;
+            color: grey;
+        }
+        
+        .btn i:hover{
+            cursor: pointer;
+        }
+    
 
-#imageHeart{
-    width: 16px;
-    height:16px;
-}
+
         .reactspost2 {
             padding-left: 45vh;
             background-color: white;
         }
-=======
-          }
 
-          .reacts {
-              background-color: white;
-              padding-top: 1vh;
-              padding-left: 45vh;
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-          }
-
-          .reactspost2 {
-              padding-left: 45vh;
-              background-color: white;
-          }
->>>>>>> 3c4e72cd92e4ed3f7448f538a009aa4acd50d039
 
           .reactspost3 {
               padding-left: 45vh;
@@ -290,17 +274,8 @@
               padding: 20px;
           }
 
-          btnh1 {
-              border: black;
-              background: transparent;
-              font-size: 16px;
-              outline: none;
-              color: grey;
-          }
 
-          .btn i:hover {
-              cursor: pointer;
-          }
+          
 
           .reacts {
               background-color: white;
