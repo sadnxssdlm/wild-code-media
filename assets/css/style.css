@@ -247,7 +247,28 @@ background-color: white;
             cursor: pointer;
         }
 
-        
+/*commentBox*/
+.usercomment{
+    border: none;
+    border-bottom: solid rgb(179, 178, 178);
+width: 200px;
+padding: 10px;
+}
+
+#publish{
+    margin: 10px;
+    padding: 5px;
+}
+
+#publish.abled{
+    background-color: purple;
+    color: white;
+}
+
+
+.sendButton{
+    background-color: purple;
+}
 
           /* wilders*/
           #wilder {
