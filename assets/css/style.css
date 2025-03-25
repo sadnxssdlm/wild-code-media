@@ -233,7 +233,6 @@
             font-size: medium;
 
         }
-
         .reacts {
             background-color: white;
             padding-top: 1vh;
@@ -243,6 +242,16 @@
             align-items: center;
         }
 
+        #likeicon{
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+        }
+
+#imageHeart{
+    width: 16px;
+    height:16px;
+}
         .reactspost2 {
             padding-left: 45vh;
             background-color: white;

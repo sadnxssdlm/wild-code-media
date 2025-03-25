@@ -64,7 +64,7 @@ sliderHtml.addEventListener("click", function () {
 /*POSTS */
 
 
-let buttonLike = document.getElementById("btnh1");
+let buttonLike = document.getElementById("likeicon");
 function Toggle1() {
   if (heart1.style.color === "red") {
     heart1.style.color = "grey";
