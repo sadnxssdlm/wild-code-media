@@ -41,7 +41,6 @@ sliderHtml.addEventListener("click", function () {
 
 
 
-
 /*WILDERSMSG */
 
 
