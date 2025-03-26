@@ -218,7 +218,16 @@
           }
       }
 
+
       /*Post 1*/
+
+      /*Icons box*/
+
+
+
+
+      /*post 1*/
+
       .text {
           background-color: #D9D9D9;
           padding-top: 1vh;
@@ -277,24 +286,16 @@
       }
 
 
+
+/*ReactPost1*/
       /*like*/
 
-      /*Reactions*/
-      .reacts {
-          background-color: white;
-          padding-top: 1vh;
-          padding-left: 45vh;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-      }
-
-      .btns,
-      #comments {
+.btns{
           position: absolute;
           top: 216px;
           left: 328px;
       }
+
 
       .btn {
           background: transparent;
@@ -308,7 +309,7 @@
           cursor: pointer;
       }
 
-      btnh1 {
+      #btnh1 {
           border: black;
           background: transparent;
           font-size: 16px;
@@ -316,12 +317,84 @@
           color: grey;
       }
 
+      /*comment*/
+.commentIcon{
+    border: none;
+    color:gray;
+    background: transparent;
+    font-size: 16px;
+}
+
+
+#commentBox{
+    width: 350px;
+    height:120px;
+    border : grey solid;
+}
 
       #publish.abled {
           background-color: purple;
           color: white;
       }
 
+
+.userComment{
+    width: 320px;
+    height:60px;
+        padding: 10px;
+        border: none;
+border-bottom: grey solid;
+text-align: center;
+}
+      #publishBtn {
+          margin: 10px;
+          padding: 5px;
+      background-color: purple;
+      color: white;
+    }
+
+
+      /*retweet*/
+      .retweetIcon{
+        border: none;
+        color:gray;
+        background: transparent;
+        font-size: 16px; 
+    }
+
+#retweetBox{
+    width: 350px;
+    height:150px;
+        padding: 10px;
+    border: solid grey;
+    left: 4%;
+    top:30%;
+    }
+
+    /*backdrop box popover*/
+::backdrop{
+    backdrop-filter:blur(1.5px) saturate(50%);
+    transition:
+    display 0.7s allow-discrete,
+    overlay 0.7s allow-discrete,
+    background-color 0.7s;
+}
+
+
+
+      /*post 2*/
+      .reactspost2 {
+          padding-left: 45vh;
+          background-color: white;
+      }
+
+      #laptopPicture {
+          background-position: center;
+          background-size: cover;
+          width: 55vh;
+      }
+
+      /*like*/
 
       .sendButton {
           background-color: purple;
@@ -355,6 +428,45 @@
           font-size: bold;
           quotes: "“" "”";
 
+      .reacts {
+          background-color: white;
+          padding-top: 1vh;
+          padding-left: 45vh;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+      }
+
+      .reactspost2 {
+          padding-left: 45vh;
+          background-color: white;
+      }
+
+      #messagesWilders {
+          text-align: center;
+
+      /*post 3*/
+
+      .reactspost3 {
+          padding-left: 45vh;
+          background-color: white;
+      }
+
+      .video {
+          height: 40vh;
+          width: 55vh;
+      }
+
+      /*Retweet*/
+    */
+
+
+      /*like*/
+
+                }
+
+
+
       /* footer*/
       .ending {
           padding-top: 3vh;
@@ -365,12 +477,20 @@
           align-items: center;
       }
 
+
       #aPropos {
           display: flex;
           flex-direction: row;
           list-style-type: none;
           padding: 0;
           margin: 0;
+
+      /* wilders*/
+      .wilder {
+          border: solid rgb(0, 0, 0);
+          border-radius: 20px;
+          padding: 20px;
+
       }
 
       #aPropos li {
@@ -381,6 +501,7 @@
           color: white;
           text-decoration: none;
       }
+
 
       .credits {
           display: flex;
@@ -394,6 +515,8 @@
           font-size: 0.8em;
           margin-top: 5px;
       }
+
+   /* footer*/
 
       /* version tablette  */
 
@@ -607,7 +730,7 @@
 
           /* wilders*/
 
-          #wilder {
+          .wilder {
               border: solid rgb(0, 0, 0);
               border-radius: 20px;
               padding: 20px;
@@ -624,9 +747,9 @@
               flex-direction: column;
               align-items: center;
 
-          }
-      }
 
+          }
+      
 
       @media screen and (min-width: 992px) {
 
@@ -865,7 +988,7 @@
 
 
           /* wilders*/
-          #wilder {
+          .wilder {
               border: solid rgb(0, 0, 0);
               border-radius: 20px;
               padding: 20px;

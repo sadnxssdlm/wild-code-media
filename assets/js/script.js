@@ -65,9 +65,43 @@ storiesModal.addEventListener('click', (e) => {
 /*POSTS */
 
 let heart1 = document.getElementById("btnh1");
-let count = document.getElementsByClassName("post-rating-count");
 function Toggle1() {
-    if (heart1.style.color === "red") {
+  if (heart1.style.color === "red") {
+    // heart1.style.color = "grey";
+  } else {
+    heart1.style.color = "red";
+  }
+}
+
+let like = document.getElementById("like");
+let count = 0;
+let count1 = "red";
+let count2 = "grey";
+
+function countClicks() {
+  if ((count1 = count + 1)) {
+    count = count + 1;
+  }
+  console.log((like.innerHTML = count));
+}
+
+// document.querySelectorAll(".reactpost1").forEach((post) => {
+//   const ratings = post.querySelectorAll(".post-rating-count");
+//   const likeRating = ratings[0];
+//   const button = post.querySelector(".btnh1");
+//   const count = post.querySelector(".post-rating-count");
+
+//   ratings.forEach((rating) => {
+//     if (rating.classList.contains("Rating")) {
+//       const count = rating.querySelector(".post-rating-count");
+
+//       count.textContent = Number(count.textContent);
+//       rating.classList.remove("Rating");
+//     }
+//   });
+// });
+
+if (heart1.style.color === "red") {
         heart1.style.color = "grey";
     } else {
         heart1.style.color = "red";
