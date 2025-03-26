@@ -123,15 +123,11 @@
           }
 
           /*  Stories  */
-
-
           .story {
               height: 10vh;
               padding-left: 45px;
               padding-bottom: 5px;
           }
-
-
 
           /* Posts*/
 
@@ -140,160 +136,118 @@
               display: flex;
           }
 
-
           .posts {
               padding: 1vh;
               text-decoration: none;
           }
 
-
-
-    .username {
-    padding-top: 1vh;
-    padding-left: 1vh;
-    font-size: medium;
-          }
-          
-    .profile {
-    height: 5vh;
- }
-        }
-        
-    
-/*post 1*/ 
-         .text {
-              background-color: #D9D9D9;
+          .username {
               padding-top: 1vh;
-              padding-bottom: 1vh;
-          }
-/*like*/
-
-
-/*post 2*/
-.reactspost2 {
-            padding-left: 45vh;
-            background-color: white;
-        }
-
-#laptopPicture {
-              background-position: center;
-              background-size: cover;
-              width: 55vh;
+              padding-left: 1vh;
+              font-size: medium;
           }
 
-#laptopPicture {
-              background-position: center;
-              background-size: cover;
-              width: 90%;
-
+          .profile {
+              height: 5vh;
           }
-/*like*/
+      }
 
+      /*post 1*/
+      .text {
+          background-color: #D9D9D9;
+          padding-top: 1vh;
+          padding-bottom: 1vh;
+      }
 
+      /*like*/
 
+      /*post 2*/
+      .reactspost2 {
+          padding-left: 45vh;
+          background-color: white;
+      }
 
+      #laptopPicture {
+          background-position: center;
+          background-size: cover;
+          width: 55vh;
+      }
 
-/*post 3*/
+      /*like*/
 
-.reactspost3 {
-padding-left: 45vh;
-background-color: white;
-}     
- .video {
-              height: 40vh;
-              width: 55vh;
-          }
-/*like*/
+      /*post 3*/
 
-/*Reactions*/ 
-.reacts {
-            background-color: white;
-            padding-top: 1vh;
-            padding-left: 45vh;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-        .btns, 
-        #comments {
-            position: absolute;
-            top: 216px;
-            left: 328px;
-        
-        }
-        
-        .btn{
-            background: transparent;
-            border: none;
-            font-size: 16px;
-            outline:none;
-            color: grey;
-        }
-        
-        .btn i:hover{
-            cursor: pointer;
-        }
+      .reactspost3 {
+          padding-left: 45vh;
+          background-color: white;
+      }
 
-        
+      .video {
+          height: 40vh;
+          width: 55vh;
+      }
 
-          /* wilders*/
-          #wilder {
-              border: solid rgb(0, 0, 0);
-              border-radius: 20px;
-              padding: 20px;
-          }
+      /*like*/
 
+      /*Reactions*/
+      .reacts {
+          background-color: white;
+          padding-top: 1vh;
+          padding-left: 45vh;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+      }
 
-          btnh1 {
-              border: black;
-              background: transparent;
-              font-size: 16px;
-              outline: none;
-              color: grey;
-          }
+      .btns,
+      #comments {
+          position: absolute;
+          top: 216px;
+          left: 328px;
+      }
 
-          .btn i:hover {
-              cursor: pointer;
-          }
+      .btn {
+          background: transparent;
+          border: none;
+          font-size: 16px;
+          outline: none;
+          color: grey;
+      }
 
-          .reacts {
-              background-color: white;
-              padding-top: 1vh;
-              padding-left: 45vh;
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-          }
+      .btn i:hover {
+          cursor: pointer;
+      }
 
-          .reactspost2 {
-              padding-left: 45vh;
-              background-color: white;
-            
-#messagesWilders {
-              text-align: center;
+      btnh1 {
+          border: black;
+          background: transparent;
+          font-size: 16px;
+          outline: none;
+          color: grey;
+      }
 
-          }
-          
+      /* wilders*/
+      #wilder {
+          border: solid rgb(0, 0, 0);
+          border-radius: 20px;
+          padding: 20px;
+      }
 
-          /* footer*/
-          #ending {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-          }
+      #messagesWilders {
+          text-align: center;
+      }
 
-          #messagesWilders {
-              text-align: center;
-          }
-
-
+      /* footer*/
+      #ending {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
 
       /* version tablette  */
 
 
       @media screen and (min-width: 768px) and (max-width: 992px) {
-
-
 
           /*Header*/
           .bg-header {
@@ -546,9 +500,6 @@ background-color: white;
               height: 11vh;
 
           }
-
-
-
 
           body {
               background-color: #E6E6E6;
