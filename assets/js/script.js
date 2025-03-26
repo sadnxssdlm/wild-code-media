@@ -37,6 +37,41 @@ sliderHtml.addEventListener("click", function () {
 
 /*STORIES */
 
+
+// Toutes les variables
+const stories = document.querySelectorAll('.story');
+const storiesModal = document.querySelector('.stories-modal');
+const modalStory = document.getElementById('modalstory');
+const closeBtn = document.querySelector('.close-btn');
+
+
+// Ouvrir le modal
+stories.forEach(story => {
+  story.addEventListener('click', () => {
+    modalStory.src = story.src;
+    storiesModal.style.display = 'flex';
+    closeBtn.style.display = 'block';
+
+    // Vu (retire les contours)
+    story.classList.add('viewed');
+  });
+});
+
+// Fermer le modal
+closeBtn.addEventListener('click', () => {
+  storiesModal.style.display = 'none';
+  closeBtn.style.display = 'none';
+});
+
+// Quand tu cliques en dehors du model il se ferme
+storiesModal.addEventListener('click', (e) => {
+  if (e.target === storiesModal) {
+    storiesModal.style.display = 'none';
+    closeBtn.style.display = 'none';
+  }
+});
+
+
 /*POSTS */
 
 let heart1 = document.getElementById("btnh1");

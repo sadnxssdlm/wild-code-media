@@ -11,6 +11,7 @@
       }
 
       * {
+          font-family: "Exo 2", sans-serif;
           margin: 0;
           padding: 0;
           box-sizing: border-box;
@@ -123,11 +124,53 @@
           }
 
           /*  Stories  */
-          .story {
-              height: 10vh;
+          #stories {
               padding-left: 45px;
               padding-bottom: 5px;
+              box-shadow: 0 0 10px bla;
+
           }
+
+          .story {
+              width: 10vh;
+              height: 10vh;
+              border: 4px solid #8323C3;
+              border-radius: 50%;
+              justify-content: space-evenly;
+              margin-right: 1vh;
+          }
+
+          .story:hover {
+              transform: scale(1.1);
+          }
+
+          .story.viewed {
+              border: 4px solid white;
+          }
+
+          .stories-modal {
+              display: none;
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.8);
+              justify-content: center;
+              align-items: center;
+              z-index: 1000;
+          }
+
+          .stories-modal img {
+              margin-right: 10vh;
+              margin-bottom: 20vh;
+              max-width: 75%;
+              max-height: 75%;
+              object-fit: contain;
+          }
+
+
+
 
           /* Posts*/
 
@@ -152,7 +195,7 @@
           }
       }
 
-      /*post 1*/
+      /*Post 1*/
       .text {
           background-color: #D9D9D9;
           padding-top: 1vh;
@@ -161,7 +204,7 @@
 
       /*like*/
 
-      /*post 2*/
+      /*Post 2*/
       .reactspost2 {
           padding-left: 45vh;
           background-color: white;
@@ -175,7 +218,7 @@
 
       /*like*/
 
-      /*post 3*/
+      /*Post 3*/
 
       .reactspost3 {
           padding-left: 45vh;
@@ -251,78 +294,82 @@
       }
 
 
-#publish.abled{
-    background-color: purple;
-    color: white;
-}
+      #publish.abled {
+          background-color: purple;
+          color: white;
+      }
 
 
-.sendButton{
-    background-color: purple;
-}
+      .sendButton {
+          background-color: purple;
+      }
 
-          /* wilders*/
-          #wilder {
-              border: solid rgb(0, 0, 0);
-              border-radius: 20px;
-              padding: 20px;
-          }
+      /* Wilders Messages*/
 
-
-          btnh1 {
-              border: black;
-              background: transparent;
-              font-size: 16px;
-              outline: none;
-              color: grey;
-          }
-
-          .btn i:hover {
-              cursor: pointer;
-          }
-
-          .reacts {
-              background-color: white;
-              padding-top: 1vh;
-              padding-left: 45vh;
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-          }
-
-          .reactspost2 {
-              padding-left: 45vh;
-              background-color: white;
-          }
-
-
-          
-
-          /* footer*/
-          #ending {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-          }
-
-
-      /* wilders*/
       #wilder {
-          border: solid rgb(0, 0, 0);
-          border-radius: 20px;
+          border: solid #FFFDFD;
+          box-shadow: 1px 1px 1px black;
+          border-radius: 20vh;
+          margin: 3vh;
           padding: 20px;
       }
 
-
       #messagesWilders {
           text-align: center;
+
+      }
+
+      blockquote::before {
+          content: open-quote;
+      }
+
+      blockquote::after {
+          content: close-quote;
+      }
+
+      blockquote {
+          font-size: bold;
+          quotes: "“" "”";
       }
 
       /* footer*/
-      #ending {
+      .ending {
+          padding-top: 3vh;
+          background: var(--colorgradient1);
+          color: white;
           display: flex;
           flex-direction: column;
           align-items: center;
+      }
+
+      #aPropos {
+          display: flex;
+          flex-direction: row;
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+      }
+
+      #aPropos li {
+          margin: 0 5px;
+      }
+
+      #aPropos a {
+          color: white;
+          text-decoration: none;
+      }
+
+      .credits {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+      }
+
+      .credits a {
+          color: white;
+          font-size: 0.8em;
+          margin-top: 5px;
       }
 
       /* version tablette  */
@@ -346,9 +393,6 @@
               position: absolute;
           }
 
-          .logo-acceuil,
-          .logo-user,
-          .logo-search,
           .logo-disconnection {
               height: 4.5vh;
           }
@@ -362,9 +406,6 @@
               padding-left: 10vh;
           }
 
-          .home,
-          .profil,
-          .search,
           .log-out {
               list-style: none;
               color: white;
@@ -403,13 +444,11 @@
 
           body {
               background-color: #E6E6E6;
-
           }
 
           /*  Nav */
           li {
               list-style: none;
-
           }
 
           /*  Main   */
@@ -418,7 +457,6 @@
               display: flex;
               justify-content: center;
               padding-top: 3vh;
-
           }
 
           #slider1 {
@@ -426,28 +464,58 @@
               justify-content: center;
               border-radius: 5%;
               width: 75%;
-
-
           }
-
-
-
 
           /*  Stories  */
-
-
-          .story {
-              height: 10vh;
+          #stories {
               padding-left: 45px;
               padding-bottom: 5px;
+              box-shadow: 0 0 10px bla;
+
           }
 
+          .story {
+              width: 10vh;
+              height: 10vh;
+              border: 4px solid #8323C3;
+              border-radius: 50%;
+              justify-content: space-evenly;
+              margin-right: 1vh;
+          }
 
+          .story:hover {
+              transform: scale(1.1);
+          }
 
+          .story.viewed {
+              border: 4px solid white;
+          }
+
+          .stories-modal {
+              display: none;
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.8);
+              justify-content: center;
+              align-items: center;
+              z-index: 1000;
+          }
+
+          .stories-modal img {
+              margin-right: 10vh;
+              margin-bottom: 20vh;
+              max-width: 75%;
+              max-height: 75%;
+              object-fit: contain;
+          }
 
           /* posts*/
 
           .profile-container {
+              background-color: white;
               display: flex;
           }
 
@@ -490,30 +558,25 @@
 
           }
 
-          #messagesWilders {
-              text-align: center;
-          }
-
           /* wilders*/
+
           #wilder {
               border: solid rgb(0, 0, 0);
               border-radius: 20px;
               padding: 20px;
           }
 
+          #messagesWilders {
+              text-align: center;
+          }
+
+          /* footer*/
+
           #ending {
               display: flex;
               flex-direction: column;
               align-items: center;
 
-              /* footer*/
-
-              #ending {
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-
-              }
           }
       }
 
@@ -536,9 +599,6 @@
 
           }
 
-          .logo-acceuil,
-          .logo-user,
-          .logo-search,
           .logo-disconnection {
               height: 4.5vh;
               padding-top: 2vh;
@@ -546,18 +606,12 @@
           }
 
           .logo-nav {
-
               display: flex;
               justify-content: flex-end;
               padding-top: 2vh;
               padding-right: 4vh;
-
-
           }
 
-          .home,
-          .profil,
-          .search,
           .log-out {
               list-style: none;
               color: white;
@@ -609,54 +663,104 @@
               display: flex;
               justify-content: center;
               border-radius: 5%;
-              width: 60%;
+              width: 40%;
 
 
           }
-
-
 
           /*  Stories  */
+          #stories {
+              padding-left: 22vh;
+              padding-top: 5vh;
+              padding-bottom: 1vh;
+              box-shadow: 0 0 10px bla;
 
-
-          .story {
-              height: 15vh;
-              padding-left: 45px;
-              padding-bottom: 5px;
-              padding-top: 40px;
           }
 
+          .story {
+              width: 15vh;
+              height: 15vh;
+              border: 4px solid #8323C3;
+              border-radius: 50%;
+              justify-content: space-between;
+              margin-right: 1vh;
+          }
+
+          .story:hover {
+              transform: scale(1.1);
+          }
+
+          .story.viewed {
+              border: 4px solid white;
+          }
+
+          .stories-modal {
+              display: none;
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.8);
+              justify-content: center;
+              align-items: center;
+              z-index: 1000;
+          }
+
+          .stories-modal img {
+              margin-right: 10vh;
+              margin-bottom: 20vh;
+              max-width: 75%;
+              max-height: 75%;
+              object-fit: contain;
+          }
 
           /* posts*/
 
           .profile-container {
+              margin-right: 60vh;
+              background-color: white;
               display: flex;
               padding-top: 20px;
           }
 
 
           .posts {
-              padding: 1vh;
+              padding: 3vh;
+              margin-left: 20vh;
               text-decoration: none;
 
           }
 
           .username {
+              margin-right: 20vh;
               padding-top: 1vh;
               padding-left: 1vh;
-              font-size: x-large;
+              font-size:large;
 
           }
 
           .profile {
-              height: 8vh;
+              height: 5vh;
+              margin-right: 1vh;
+              margin-bottom: 1vh;
           }
 
           .text {
+              padding: 1vh;
+              margin-right: 60vh;
               background-color: #D9D9D9;
               padding-top: 1vh;
-              padding-bottom: 1vh;
-              font-size: xx-large;
+              padding-bottom: 4vh;
+              font-size: large;
+          }
+
+          .articletitle {
+            margin-right: 60vh;
+            background-color: #D9D9D9 ;
+            font-weight: bold;
+            font-size: large;
+            padding: 1vh;
           }
 
           .reacts {
@@ -669,15 +773,19 @@
           }
 
           #laptopPicture {
+              margin-right: 92vh;
+              background-color: #D9D9D9;
+              font-size: xx-large;
               background-position: center;
               background-size: cover;
-              width: 100%;
-
+              width: 114vh;
+              height: 60vh;
           }
 
-          #messagesWilders {
-              text-align: center;
-              font-size: xx-large;
+          .video {
+            width: 114vh;
+            height: 60vh;
+
           }
 
 
@@ -689,15 +797,9 @@
               font-size: xx-large;
           }
 
-
-          /* footer*/
-          #ending {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
+          #messagesWilders {
+              text-align: center;
               font-size: xx-large;
-              padding-top: 30px;
-
           }
 
           /* A propos */
