@@ -75,9 +75,10 @@
 
 
            <div class="reactpost1">
-            <button onclick="Toggle1()" id="btnh1" class="btn"><i class="fas fa-heart"></i></button>
-         
-          
+            <div class="LikeButton" class="Rating">
+          <button onclick="Toggle1()" id="btnh1" class="btn"><i class="fas fa-heart"></i></a></button>
+      <span onclick="postRating()" class="post-rating-count">0</span>
+        </div>
           <div class="commentBox">
             <button popovertarget="commentBox"><i class="fa-solid fa-comment"></i></button>
             <div id="commentBox"popover >
@@ -85,15 +86,14 @@
               <input type="text" placeholder="Comment here" class="usercomment">
               <div class="buttons">
                 <button type="submit" disabled id="publish">Publish</button>
-            </div>
-            </div>
+            </div></div>
+           
+           
+            <button onclick="ToggleS()" id="btnShare" class="btnS"><i class="fa-solid fa-retweet"></i></button>
+
+           
  </div> 
-            <img
-              id="shareicon"
-              src="assets/img/icons/envoyer.png"
-              alt="Share icon"
-            />
-          </div>
+          
         </article>
 
         <article id="post-2">
