@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Wild Code Media</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
 
-    <link rel="stylesheet" href="/assets/css/style.css">
-
-</head>
-
-<body>
+  <body>
     <header>
+
         <nav class="nav-links">
 
             <div><img src="assets/img/images/logo.png" alt="Logo WCM" class="logo-WCM"></div>
@@ -40,29 +37,75 @@
     </header>
 
     <main>
-        <!--Slider-->
 
-        <div class="slider">
-            <img id=slider1 src="assets/img/images/slider1.png" alt="Photo de NVDIA">
+      <!--Slider-->
+      <div class="slider">
+        <img
+          id="slider1"
+          src="assets/img/images/slider1.png"
+          alt="Photo de NVDIA"
+        />
+      </div>
+      <!--Story-->
 
-        </div>
-        <!--Story-->
+      <div id="stories">
+        <img class="story" src="assets/img/images/pp-one.png" alt="Story 1 " />
+        <img class="story" src="assets/img/images/pp-two.png" alt="Story 2" />
+        <img class="story" src="assets/img/images/pp-three.png" alt="Story 3" />
+      </div>
 
-        <div id="stories">
-            <img class="story" src="assets/img/images/pp-one.png" alt="Story 1 ">
-            <img class="story" src="assets/img/images/pp-two.png" alt="Story 2">
-            <img class="story" src="assets/img/images/pp-three.png" alt="Story 3">
-        </div>
+      <!--Posts-->
+      <section class="posts">
+        <article id="post-1">
+          <div class="profile-container">
+            <img
+              class="profile"
+              src="assets/img/images/pp-three.png"
+              alt="A John Doe Profile Picture"
+            />
+            <h2 class="username">Joe Doe</h2>
+          </div>
+
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eius
+            in dignissimos quibusdam consequatur impedit asperiores laboriosam
+            necessitatibus quaerat aperiam. Consectetur, ipsam dolor minima
+            blanditiis perspiciatis enim sequi ab saepe.
+          </p>
+          
 
 
+           <div class="reactpost1">
+            <button onclick="Toggle1()" id="btnh1" class="btn"><i class="fas fa-heart"></i></button>
+         
+          
+          <div class="commentBox">
+            <button popovertarget="commentBox"><i class="fa-solid fa-comment"></i></button>
+            <div id="commentBox"popover >
+              <button popovertarget="commentBox" popovertargetaction="hide">X</button>
+              <input type="text" placeholder="Comment here" class="usercomment">
+              <div class="buttons">
+                <button type="submit" disabled id="publish">Publish</button>
+            </div>
+            </div>
+ </div> 
+            <img
+              id="shareicon"
+              src="assets/img/icons/envoyer.png"
+              alt="Share icon"
+            />
+          </div>
+        </article>
 
-        <!--Posts-->
-        <section class="posts">
-            <article id="post-1">
-                <div class="profile-container">
-                    <img class="profile" src="assets/img/images/pp-three.png" alt="A John Doe Profile Picture">
-                    <h2 class="username">Joe Doe</h2>
-                </div>
+        <article id="post-2">
+          <div class="profile-container">
+            <img
+              class="profile"
+              src="assets/img/images/pp-one.png"
+              alt="FA Jane Doe Profile Picture"
+            />
+            <h2 class="username">Jane Doe</h2>
+          </div>
 
                 <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Modi eius in dignissimos quibusdam consequatur impedit
@@ -70,72 +113,104 @@
                     Consectetur ipsam dolor minima blanditiis perspiciatis
                     enim sequi ab saepe.</p>
 
-                <div class="reacts">
-                    <img id="likeicon" src="assets/img/icons/coeur.png" alt="Like icon">
-                    <img id="commenticon" src="assets/img/icons/commenter.png" alt="Comment icon">
-                    <img id="shareicon" src="assets/img/icons/envoyer.png" alt="Share icon">
-                </div>
-            </article>
 
-            <article id="post-2">
-                <div class="profile-container">
-                    <img class="profile" src="assets/img/images/pp-one.png" alt="FA Jane Doe Profile Picture">
-                    <h2 class="username">Jane Doe</h2>
-                </div>
+          <img
+            id="laptopPicture"
+            src="assets/img/images/post2.jpg"
+            alt="Laptop"
+          />
 
-                <img id="laptopPicture" src="assets/img/images/post2.jpg" alt="Laptop">
+          <div class="reactpost2">
+            <button onclick="Toggle2()" id="btnh2" class="btn"><i class="fas fa-heart"></i></button>
+          </div>
+            <img
+              id="commenticon"
+              src="assets/img/icons/commenter.png"
+              alt="Comment icon"
+            />
+            <img
+              id="shareicon"
+              src="assets/img/icons/envoyer.png"
+              alt="Share icon"
+            />
+          </div>
+        </article>
 
-                <div class="reactspost2">
-                    <img id="likeicon" src="assets/img/icons/coeur.png" alt="Like icon">
-                    <img id="commenticon" src="assets/img/icons/commenter.png" alt="Comment icon">
-                    <img id="shareicon" src="assets/img/icons/envoyer.png" alt="Share icon">
-                </div>
-            </article>
+        <article id="post-3">
+          <div class="profile-container">
+            <img
+              class="profile"
+              src="assets/img/images/pp-two.png"
+              alt="A Ayoub Doe Profile Picture"
+            />
+            <h2 class="username">Ayoub Doe</h2>
+          </div>
+          <div class="video">
+            <iframe
+              class="video"
+              src="https://www.youtube.com/embed/fvWZ2kjTo-Q?si=-tt4PzqP87NI_YLo"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
 
-            <article id="post-3">
-                <div class="profile-container">
-                    <img class="profile" src="assets/img/images/pp-two.png" alt="A Ayoub Doe Profile Picture">
-                    <h2 class="username">Ayoub Doe</h2>
-                </div>
-                <div class="video">
-                    <iframe class="video" src="https://www.youtube.com/embed/fvWZ2kjTo-Q?si=-tt4PzqP87NI_YLo"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+          <div class="reactspost3">
+              <button onclick="Toggle3()" id="btnh3" class="btn"><i class="fas fa-heart"></i></button>
+            
+            <img
+              id="commenticon"
+              src="assets/img/icons/commenter.png"
+              alt="Comment icon"
+            />
+            <img
+              id="shareicon"
+              src="assets/img/icons/envoyer.png"
+              alt="Share icon"
+            />
+          </div>
+        </article>
+      </section>
 
-                <div class="reactspost3">
-                    <img id="likeicon" src="assets/img/icons/coeur.png" alt="Like icon">
-                    <img id="commenticon" src="assets/img/icons/commenter.png" alt="Comment icon">
-                    <img id="shareicon" src="assets/img/icons/envoyer.png" alt="Share icon">
-                </div>
-            </article>
-        </section>
+      <!--Message des Wilders-->
+      <h2 id="messagesWilders">Messages des wilders</h2>
 
-        <!--Message des Wilders-->
-        <h2 id="messagesWilders">Messages des wilders</h2>
-
-        <div id="wilder">
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Impedit cumque ab rem nihil, cupiditate id, quam vitae
-                non fugiat ipsum et eos animi beatae nemo
-                tenetur laudantium, eligendi assumenda consequatur.</p>
-        </div>
-
+      <div id="wilder">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+          cumque ab rem nihil, cupiditate id, quam vitae non fugiat ipsum et eos
+          animi beatae nemo tenetur laudantium, eligendi assumenda consequatur.
+        </p>
+      </div>
     </main>
 
     <!--JavaScript-->
     <script src="/assets/js/script.js"></script>
-</body>
+    <script src="https://kit.fontawesome.com/b03f274dc8.js" crossorigin="anonymous"></script>  
 
-<footer class="ending">
-    <img src="" alt="Logo de WCM">
+  </body>
+
+  <footer class="ending">
+    <img src="" alt="Logo de WCM" />
     <ul id="aPropos">
-        <li><a href="#"></a>Mentions légales | </li>
-        <li><a href="#"></a> A propos | </li>
-        <li><a href="#"></a> Conditions d'utilisation</li>
+      <li><a href="#"></a>Mentions légales |</li>
+      <li><a href="#"></a> A propos |</li>
+      <li><a href="#"></a> Conditions d'utilisation</li>
     </ul>
     <div class="credits">
+
+      <p>&copy;2025 Wild Code Media</p>
+      <a
+        href="https://www.flaticon.com/fr/icones-gratuites/commentaire"
+        title="commentaire icônes"
+        >Commentaire icônes créées par JessHG - Flaticon</a
+      >
+    </div>
+  </footer>
+</html>
+
         <p>&copy;2025 Wild Code Media </p>
         <a href="https://www.flaticon.com/fr/icones-gratuites/commentaire" title="commentaire icônes">Commentaire icônes
             créées par JessHG - Flaticon</a>
