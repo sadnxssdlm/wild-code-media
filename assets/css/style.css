@@ -152,6 +152,16 @@
           }
       }
 
+      /*Icons box*/
+
+.reactpost1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+
       /*post 1*/
       .text {
           background-color: #D9D9D9;
@@ -159,7 +169,95 @@
           padding-bottom: 1vh;
       }
 
+
+/*ReactPost1*/
       /*like*/
+
+.btns{
+          position: absolute;
+          top: 216px;
+          left: 328px;
+      }
+
+
+      .btn {
+          background: transparent;
+          border: none;
+          font-size: 16px;
+          outline: none;
+          color: grey;
+      }
+
+      .btn i:hover {
+          cursor: pointer;
+      }
+
+      #btnh1 {
+          border: black;
+          background: transparent;
+          font-size: 16px;
+          outline: none;
+          color: grey;
+      }
+
+      /*comment*/
+.commentIcon{
+    border: none;
+    color:gray;
+    background: transparent;
+    font-size: 16px;
+}
+
+#commentBox{
+    width: 350px;
+    height:120px;
+    border : grey solid;
+}
+
+.userComment{
+    width: 320px;
+    height:60px;
+        padding: 10px;
+        border: none;
+border-bottom: grey solid;
+text-align: center;
+}
+
+      #publishBtn {
+          margin: 10px;
+          padding: 5px;
+      background-color: purple;
+      color: white;
+    }
+
+
+      /*retweet*/
+      .retweetIcon{
+        border: none;
+        color:gray;
+        background: transparent;
+        font-size: 16px; 
+    }
+
+#retweetBox{
+    width: 350px;
+    height:150px;
+        padding: 10px;
+    border: solid grey;
+    left: 4%;
+    top:30%;
+    }
+
+    /*backdrop box popover*/
+::backdrop{
+    backdrop-filter:blur(1.5px) saturate(50%);
+    transition:
+    display 0.7s allow-discrete,
+    overlay 0.7s allow-discrete,
+    background-color 0.7s;
+}
+
+
 
       /*post 2*/
       .reactspost2 {
@@ -175,6 +273,9 @@
 
       /*like*/
 
+
+
+
       /*post 3*/
 
       .reactspost3 {
@@ -187,127 +288,17 @@
           width: 55vh;
       }
 
-      /*commentBox*/
-      .usercomment {
-          border: none;
-          border-bottom: solid rgb(179, 178, 178);
-          width: 200px;
-          padding: 10px;
-      }
-
-      #publish {
-          margin: 10px;
-          padding: 5px;
-      }
-
-      #publish.abled {
-          background-color: purple;
-          color: white;
-      }
-
-
-      .sendButton {
-          background-color: purple;
-      }
+      /*Retweet*/
+    */
 
 
       /*like*/
 
-      /*Reactions*/
-      .reacts {
-          background-color: white;
-          padding-top: 1vh;
-          padding-left: 45vh;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-      }
-
-      .btns,
-      #comments {
-          position: absolute;
-          top: 216px;
-          left: 328px;
-      }
-
-      .btn {
-          background: transparent;
-          border: none;
-          font-size: 16px;
-          outline: none;
-          color: grey;
-      }
-
-      .btn i:hover {
-          cursor: pointer;
-      }
-
-      btnh1 {
-          border: black;
-          background: transparent;
-          font-size: 16px;
-          outline: none;
-          color: grey;
-      }
-
-
-#publish.abled{
-    background-color: purple;
-    color: white;
-}
-
-
-.sendButton{
-    background-color: purple;
-}
-
-          /* wilders*/
-          #wilder {
-              border: solid rgb(0, 0, 0);
-              border-radius: 20px;
-              padding: 20px;
-          }
-
-
-          btnh1 {
-              border: black;
-              background: transparent;
-              font-size: 16px;
-              outline: none;
-              color: grey;
-          }
-
-          .btn i:hover {
-              cursor: pointer;
-          }
-
-          .reacts {
-              background-color: white;
-              padding-top: 1vh;
-              padding-left: 45vh;
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-          }
-
-          .reactspost2 {
-              padding-left: 45vh;
-              background-color: white;
-          }
-
-
           
-
-          /* footer*/
-          #ending {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-          }
 
 
       /* wilders*/
-      #wilder {
+      .wilder {
           border: solid rgb(0, 0, 0);
           border-radius: 20px;
           padding: 20px;
@@ -318,13 +309,12 @@
           text-align: center;
       }
 
-      /* footer*/
-      #ending {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-      }
-
+   /* footer*/
+          #ending {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+          }
       /* version tablette  */
 
 
@@ -495,16 +485,12 @@
           }
 
           /* wilders*/
-          #wilder {
+          .wilder {
               border: solid rgb(0, 0, 0);
               border-radius: 20px;
               padding: 20px;
           }
 
-          #ending {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
 
               /* footer*/
 
@@ -515,7 +501,7 @@
 
               }
           }
-      }
+      
 
 
       @media screen and (min-width: 992px) {
@@ -682,7 +668,7 @@
 
 
           /* wilders*/
-          #wilder {
+          .wilder {
               border: solid rgb(0, 0, 0);
               border-radius: 20px;
               padding: 20px;
