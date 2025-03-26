@@ -17,9 +17,7 @@
           box-sizing: border-box;
       }
 
-      /* version mobile */
-
-      @media screen and (max-width: 768px) {
+      /* version mobile */ 
 
 
           /*Header*/
@@ -193,8 +191,6 @@
           }
 
 
-
-
           /* Posts*/
 
           .profile-container {
@@ -216,80 +212,15 @@
           .profile {
               height: 5vh;
           }
-      }
-
-
-      /*Post 1*/
-
-      /*Icons box*/
-
-
-
-
-      /*post 1*/
-
-      .text {
-          background-color: #D9D9D9;
-          padding-top: 1vh;
-          padding-bottom: 1vh;
-      }
-
-      /*like*/
-
-      /*Post 2*/
-      .reactspost2 {
-          padding-left: 45vh;
-          background-color: white;
-      }
-
-      #laptopPicture {
-          background-position: center;
-          background-size: cover;
-          width: 55vh;
-      }
-
-      /*like*/
-
-      /*Post 3*/
-
-      .reactspost3 {
-          padding-left: 45vh;
-          background-color: white;
-      }
-
-      .video {
-          height: 40vh;
-          width: 55vh;
-      }
-
-      /*commentBox*/
-      .usercomment {
-          border: none;
-          border-bottom: solid rgb(179, 178, 178);
-          width: 200px;
-          padding: 10px;
-      }
-
-      #publish {
-          margin: 10px;
-          padding: 5px;
-      }
-
-      #publish.abled {
-          background-color: purple;
-          color: white;
-      }
-
-
-      .sendButton {
-          background-color: purple;
-      }
-
-
 
 /*ReactPost1*/
-      /*like*/
+.text {
+    background-color: #D9D9D9;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
 
+/*like*/
 .btns{
           position: absolute;
           top: 216px;
@@ -332,12 +263,6 @@
     border : grey solid;
 }
 
-      #publish.abled {
-          background-color: purple;
-          color: white;
-      }
-
-
 .userComment{
     width: 320px;
     height:60px;
@@ -346,6 +271,11 @@
 border-bottom: grey solid;
 text-align: center;
 }
+#publish {
+    margin: 10px;
+    padding: 5px;
+}
+
       #publishBtn {
           margin: 10px;
           padding: 5px;
@@ -353,6 +283,12 @@ text-align: center;
       color: white;
     }
 
+   #publish.abled {
+          background-color: purple;
+          color: white;
+      }
+
+ 
 
       /*retweet*/
       .retweetIcon{
@@ -371,7 +307,7 @@ text-align: center;
     top:30%;
     }
 
-    /*backdrop box popover*/
+    /*Section backdrop box popover*/
 ::backdrop{
     backdrop-filter:blur(1.5px) saturate(50%);
     transition:
@@ -380,25 +316,60 @@ text-align: center;
     background-color 0.7s;
 }
 
+      .reacts {
+          background-color: white;
+          padding-top: 1vh;
+          padding-left: 45vh;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+      }
 
+/*React post 2*/
 
-      /*post 2*/
       .reactspost2 {
           padding-left: 45vh;
           background-color: white;
       }
 
+      #messagesWilders {
+          text-align: center;
+      }
+ 
       #laptopPicture {
           background-position: center;
           background-size: cover;
           width: 55vh;
       }
 
-      /*like*/
+ /*like*/
 
-      .sendButton {
-          background-color: purple;
+
+   /*Comment*/
+
+   
+      /*Retweet*/
+
+
+      /*Reacts post 3*/
+
+      .reactspost3 {
+          padding-left: 45vh;
+          background-color: white;
       }
+
+      .video {
+          height: 40vh;
+          width: 55vh;
+      }
+   /*like*/
+
+   /*Comment*/
+
+
+      /*Retweet*/
+    
+     
 
 
       /* Wilders Messages*/
@@ -409,11 +380,6 @@ text-align: center;
           border-radius: 20vh;
           margin: 3vh;
           padding: 20px;
-      }
-
-      #messagesWilders {
-          text-align: center;
-
       }
 
       blockquote::before {
@@ -427,43 +393,17 @@ text-align: center;
       blockquote {
           font-size: bold;
           quotes: "“" "”";
-
-      .reacts {
-          background-color: white;
-          padding-top: 1vh;
-          padding-left: 45vh;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
       }
 
-      .reactspost2 {
-          padding-left: 45vh;
-          background-color: white;
-      }
-
-      #messagesWilders {
-          text-align: center;
-
-      /*post 3*/
-
-      .reactspost3 {
-          padding-left: 45vh;
-          background-color: white;
-      }
-
-      .video {
-          height: 40vh;
-          width: 55vh;
-      }
-
-      /*Retweet*/
-    */
 
 
-      /*like*/
+/* wilders*/
+      .wilder {
+          border: solid rgb(0, 0, 0);
+          border-radius: 20px;
+          padding: 20px;
 
-                }
+      }           
 
 
 
@@ -484,23 +424,19 @@ text-align: center;
           list-style-type: none;
           padding: 0;
           margin: 0;
-
-      /* wilders*/
-      .wilder {
-          border: solid rgb(0, 0, 0);
-          border-radius: 20px;
-          padding: 20px;
-
       }
+      
+#aPropos a {
+          color: white;
+          text-decoration: none;
+      }
+      
 
       #aPropos li {
           margin: 0 5px;
       }
 
-      #aPropos a {
-          color: white;
-          text-decoration: none;
-      }
+      
 
 
       .credits {
@@ -516,7 +452,7 @@ text-align: center;
           margin-top: 5px;
       }
 
-   /* footer*/
+
 
       /* version tablette  */
 
