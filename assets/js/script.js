@@ -31,6 +31,7 @@ setInterval("changeSlide(1)", 4000);
 /*POSTS */
 
 let heart1 = document.getElementById("btnh1");
+let count = document.getElementsByClassName("post-rating-count");
 function Toggle1() {
     if (heart1.style.color === "red") {
         heart1.style.color = "grey";
@@ -38,6 +39,29 @@ function Toggle1() {
         heart1.style.color = "red";
     }
 }
+function postRating() {
+  if (heart1 === "red") {
+    heart1 + 1;
+  } else {
+    heart1 - 1;
+  }
+}
+
+document.querySelectorAll(".reactpost1").forEach((post) => {
+  const ratings = post.querySelectorAll(".post-rating-count");
+  const likeRating = ratings[0];
+  const button = post.querySelector(".btnh1");
+  const count = post.querySelector(".post-rating-count");
+
+  ratings.forEach((rating) => {
+    if (rating.classList.contains("Rating")) {
+      const count = rating.querySelector(".post-rating-count");
+
+      count.textContent = Number(count.textContent);
+      rating.classList.remove("Rating");
+    }
+  });
+});
 
 /*post 2*/
 
@@ -66,6 +90,8 @@ function Toggle3() {
         heart3.style.color = "red";
     }
 }
+
+/*Retweet*/
 
 /*WILDERSMSG */
 
