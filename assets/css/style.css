@@ -25,7 +25,7 @@
           /*Header*/
           .bg-header {
               background-image: url(/assets/img/images/background.jpg);
-              height: 20vh;
+              height: 25vh;
               background-size: cover;
               background-position: center;
           }
@@ -83,14 +83,18 @@
           .nav-links {
               background: linear-gradient(90deg, #B72193 0%, #5925E9 100%);
               width: 100%;
-              height: 50vh;
+              height: 45vh;
               margin-left: -100vh;
               transition: all 0.8s ease;
           }
 
           .mobile-menu {
               margin-left: 0;
+              position: absolute;
+
           }
+
+
 
           /*Body*/
           body {
@@ -107,8 +111,9 @@
           /*  Main   */
           /* .Slider */
           .slider {
+              padding-top: 2.5vh;
               display: flex;
-              flex-direction: row;
+              align-items: center;
 
           }
 
@@ -121,6 +126,24 @@
               padding-left: 30px;
               padding-right: 30px;
               border-radius: 15%;
+
+          }
+
+          #back,
+          #next {
+              font-size: 7vh;
+              position: absolute;
+              color: #ffffff;
+              cursor: pointer;
+              font-weight: 1000;
+          }
+
+          #back {
+              left: 5.5vh;
+          }
+
+          #next {
+              right: 5.5vh;
           }
 
           /*  Stories  */
@@ -304,6 +327,7 @@
           background-color: purple;
       }
 
+
       /* Wilders Messages*/
 
       #wilder {
@@ -330,7 +354,6 @@
       blockquote {
           font-size: bold;
           quotes: "“" "”";
-      }
 
       /* footer*/
       .ending {
@@ -380,7 +403,7 @@
           /*Header*/
           .bg-header {
               background-image: url(/assets/img/images/background.jpg);
-              height: 20vh;
+              height: 22vh;
               background-size: cover;
               background-position: center;
           }
@@ -432,7 +455,7 @@
           .nav-links {
               background: linear-gradient(90deg, #B72193 0%, #5925E9 100%);
               width: 100%;
-              height: 45vh;
+              height: 40vh;
               margin-left: -100vh;
               transition: all 0.8s ease;
           }
@@ -456,15 +479,39 @@
           .slider {
               display: flex;
               justify-content: center;
-              padding-top: 3vh;
+              padding-top: 5vh;
+              padding-bottom: 5vh;
+              align-items: center;
+
           }
 
           #slider1 {
               display: flex;
               justify-content: center;
               border-radius: 5%;
-              width: 75%;
+              width: 65%;
           }
+
+              
+          }
+
+          #back,
+          #next {
+              font-size: 7vh;
+              position: absolute;
+              color: #ffffff;
+              cursor: pointer;
+              font-weight: 1000;
+          }
+
+          #back {
+              left: 12.5vh;
+          }
+
+          #next {
+              right: 12.5vh;
+          }
+
 
           /*  Stories  */
           #stories {
@@ -655,6 +702,7 @@
           .slider {
               display: flex;
               justify-content: center;
+              align-items: center;
               padding-top: 3vh;
 
           }
@@ -664,9 +712,36 @@
               justify-content: center;
               border-radius: 5%;
               width: 40%;
+              align-items: center;
+          }
 
+
+          #back,
+          #next {
+              font-size: 7vh;
+              position: absolute;
+              color: #ffffff;
+              cursor: pointer;
+              font-weight: 1000;
+              padding-left: 2.75rem;
+              padding-right: 2.75rem;
+              padding-top: 1.5rem;
+              padding-bottom: 1.5rem;
 
           }
+
+          #back {
+              left: 25vh;
+              border-radius: 46% 54% 48% 52% / 54% 54% 46% 46%;
+              background: linear-gradient(90deg, #B72193 0%, #5925E9 100%);
+          }
+
+          #next {
+              right: 25vh;
+              border-radius: 46% 54% 48% 52% / 54% 54% 46% 46%;
+              background: linear-gradient(90deg, #3D00EB 0%, #9D1CA6 100%);
+          }
+
 
           /*  Stories  */
           #stories {
