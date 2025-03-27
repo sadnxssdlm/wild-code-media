@@ -187,6 +187,7 @@
           .profile-container {
               background-color: white;
               display: flex;
+        margin-top: 20px;;
           }
 
           .posts {
@@ -202,6 +203,10 @@
 
           .profile {
               height: 5vh;
+          }
+
+          .articletitle{
+            margin: 5px;
           }
 
 /*ReactPost1*/
@@ -225,6 +230,7 @@
           font-size: 16px;
           outline: none;
           color: grey;
+          margin:2px;
       }
 
       .btn i:hover {
@@ -245,6 +251,8 @@
     color:gray;
     background: transparent;
     font-size: 16px;
+    margin:2px;
+
 }
 
 
@@ -252,6 +260,7 @@
     width: 350px;
     height:120px;
     border : grey solid;
+
 }
 
 .userComment{
@@ -285,6 +294,7 @@ text-align: center;
         color:gray;
         background: transparent;
         font-size: 16px; 
+        margin:2px;
     }
 
 #retweetBox{
@@ -314,6 +324,33 @@ text-align: center;
           align-items: center;
       }
 
+      .reactpost1,
+      .reactspost2,
+      .reactspost3{
+        display: flex;
+        flex-direction: row;
+justify-content: flex-end;    
+}
+
+/*Section commentaire sous les post*/
+ .UserComments{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+#com1,#com2,
+#com3,#com4, 
+#com5, #com6{
+    border:transparent;
+    width: 340px;
+    padding: 10px;
+    margin: 10px; 
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px grey; 
+    }
+
+
+/*UserComments*/
 /*React post 2*/
 
       .reactspost2 {
@@ -457,12 +494,52 @@ text-align: center;
     flex-direction: row-reverse;
   }
   
+  /*sign in form*/
+  .SignInForm{
+    border: #3D00EB solid;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .user,
+  .email,
+  .password,
+  .retype{
+padding: 10px;
+margin: 5px;
+border-radius: 5px;
+  }
+
+.signIn{
+    padding: 10px;
+    margin:5px;
+    width: 80px;
+   border-radius: 5px;
+}
+
+/*pous poster du nouveau contenu*/
+  .NewPost{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: whitesmoke;
+  }
+  .NNewPost{
+    width: 350px;
+    padding: 20px;
+    border:none;
+    box-shadow: 5px 5px 5px 5px grey; 
+  }
   
-  
-  
-  
-  
-  
+  .NPost{
+    display: flex;
+    align-items: end;
+    width: 100px;
+margin: 10px;
+box-shadow: 5px 5px 5px 5px grey; 
+  }
   
       /* version tablette  */
 
