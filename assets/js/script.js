@@ -26,7 +26,7 @@ function changeSlide(sens) {
   index = index + sens;
   if (index > slide.length - 1) index = 0;
   if (index < 0) index = slide.length - 1;
-  document.getElementById("slider1").src = "assets/img/images/" + slide[numero];
+  document.getElementById("slider1").src = "assets/img/images/" + slide[index];
 }
 /* changes d'images toutes les 4sec (4000)  */
 setInterval("changeSlide(1)", 4000);
@@ -77,10 +77,8 @@ function Toggle1() {
 
 let like = document.getElementById("like");
 let count = 0;
-let count1 = "red";
-let count2 = "grey";
 
-function countClicks() {
+function countClicks1() {
   if ((count1 = count + 1)) {
     count = count + 1;
   }
@@ -93,20 +91,58 @@ if (heart1.style.color === "red") {
   heart1.style.color = "red";
 }
 
-function postRating() {
-  if (heart1 === "red") {
-    heart1 + 1;
-  } else {
-    heart1 - 1;
-  }
-}
-
 /*publish*/
 /*créer un evenement pour pouvoir poster a la suite d'un post 
 des messages */
 
 /*retweet*/
 /* pouvoir le retweeter à la suite*/
+
+/*echange de commentaire*/
+
+let data = {
+  com1: "Quel découverte!!",
+  com2: "Impressionnant ?",
+  com3: "loremrefq",
+  com4: "live life long",
+  com5: "decouvrir",
+  com6: " Go Web Developper",
+};
+localStorage.setItem("userData", JSON.stringify(data));
+
+const userData = JSON.parse(localStorage.getItem("userData"));
+document.getElementById("com1").innerHTML = userData.com1;
+document.getElementById("com2").innerHTML = userData.com2;
+document.getElementById("com3").innerHTML = userData.com3;
+document.getElementById("com4").innerHTML = userData.com4;
+document.getElementById("com5").innerHTML = userData.com5;
+document.getElementById("com6").innerHTML = userData.com6;
+
+const showButton = document.getElementById("showDialog");
+const favDialog = document.getElementById("favDialog");
+const outputBox = document.querySelector("output");
+const selectEl = favDialog.querySelector("input");
+const confirmBtn = favDialog.querySelector("#confirmBtn");
+
+showButton.addEventListener("click", () => {
+  favDialog.showModal();
+});
+
+selectEl.addEventListener("change", (e) => {
+  confirmBtn.value = selectEl.value;
+});
+
+favDialog.addEventListener("close", (e) => {
+  outputBox.value =
+    favDialog.returnValue === "default"
+      ? "Pas de valeur retournée."
+      : `${favDialog.returnValue}.`;
+});
+
+confirmBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  favDialog.close(selectEl.value);
+});
 
 /*post 2*/
 
@@ -120,12 +156,17 @@ des messages */
 let heart2 = document.getElementById("btnh2");
 function Toggle2() {
   if (heart2.style.color === "red") {
-    heart2.style.color = "grey";
+    // heart2.style.color = "grey";
   } else {
     heart2.style.color = "red";
   }
 }
-
+function countClick2() {
+  if ((count2 = count + 1)) {
+    count = count + 1;
+  }
+  console.log((heartCount.innerHTML = count));
+}
 /*post 3*/
 
 /*reactions*/
@@ -134,12 +175,18 @@ function Toggle2() {
 let heart3 = document.getElementById("btnh3");
 function Toggle3() {
   if (heart3.style.color === "red") {
-    heart3.style.color = "grey";
+    // heart3.style.color = "grey";
   } else {
     heart3.style.color = "red";
   }
 }
 
+function countClick3() {
+  if ((count3 = count + 1)) {
+    count = count + 1;
+  }
+  console.log((Countheart.innerHTML = count));
+}
 /*Retweet*/
 
 /*WILDERSMSG */
@@ -159,19 +206,20 @@ function ecrirePhrase() {
   texte.innerHTML = "";
   indexLettre = 0;
 
-  let timer = setInterval(() => {
-    if (indexLettre < contenu.length) {
-      texte.innerHTML += contenu.charAt(indexLettre);
-      indexLettre++;
-    } else {
-      clearInterval(timer);
-      setTimeout(() => {
-        numero = (numero + 1) % comment.length;
-        ecrirePhrase();
-      }, 3000);
-    }
-  }, 50);
+  //   let timer = setInterval(() => {
+  //     if (indexLettre < contenu.length) {
+  //       texte.innerHTML += contenu.charAt(indexLettre);
+  //       indexLettre++;
+  //     } else {
+  //       clearInterval(timer);
+  //       setTimeout(() => {
+  //         numero = (numero + 1) % comment.length;
+  //         ecrirePhrase();
+  //       }, 3000);
+  //     }
+  //   }, 50);
+  // }
+  // ecrirePhrase();
+  /*voir le code au dessus il y a un message sur la console qui bloque l'éxécution*/
+  /*FOOTER */
 }
-ecrirePhrase();
-/*voir le code au dessus il y a un message sur la console qui bloque l'éxécution*/
-/*FOOTER */

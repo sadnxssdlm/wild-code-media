@@ -53,7 +53,7 @@
                 <div id="back" onclick="changeSlide(-1)">&lt;</div>
                 <div id="next" onclick="changeSlide(1)">&gt;</div>
             </div>>
-
+</div>
             <!--Story-->
 
             <div id="stories">
@@ -69,17 +69,17 @@
             </div>
 
 <!--Sign up au lieu de log-out-->
-<form class="Sign In Form">
-<input type="name" id="username" placeholder="Username" autocomplete="off">
-<input type="email" name="Email Adresse" placeholder="Email Adresse">
-<input type="password" name="password" placeholder="password">
-<input type="password" name="password" placeholder=" Retype your password">
-<input type="submit" value="Sign Up">p
+<form class="SignInForm">
+<input class="user" type="name" id="username" placeholder="Username" autocomplete="off">
+<input class="email" type="email" name="Email Adresse" placeholder="Email Adresse">
+<input class="password" type="password" name="password" placeholder="password">
+<input class="retype" type="password" name="password" placeholder=" Retype your password">
+<input class="signIn" type="submit" value="Sign Up">
 </form>
 
 <!--Section pour pouvoir faire un post-->
 <div class="NewPost">
-<input type="text" name="text-area" placeholder="What's up ?">
+<input class="NNewPost" type="text" name="text-area" placeholder="What's up ?">
 <input class="NPost" type="submit" value="Post">
 </div>
             <!--Posts-->
@@ -105,11 +105,10 @@
 
                     <div class="reactpost1">
                         <div class="LikeButton" class="Rating">
-                            <button onclick="Toggle1(),ondblclick= countClicks()" id="btnh1" class="btn"><i
+                            <button onclick="Toggle1(),ondblclick= countClicks1()" id="btnh1" class="btn"><i
                                     class="fas fa-heart"></i></a></button>
                             <p id="like"></p>
                         </div>
-
                         <div class="commentBox">
                             <button class="commentIcon" popovertarget="commentBox"><i
                                     class="fa-solid fa-comment"></i></button>
@@ -120,8 +119,7 @@
                                     <button type="submit" abled id="publishBtn">Publish</button>
                                 </div>
                             </div>
-                        </div>
-
+                        </div> 
                         <div class="retweetBox">
                             <button class="retweetIcon" popovertarget="retweetBox"><i
                                     class="fa-solid fa-retweet"></i></button>
@@ -133,6 +131,11 @@
                                 </div>
                             </div>
                         </div>
+</div>
+<div class="UserComments">
+<div id="com3"><p></p></div>
+<div id="com4"><p></p></div>
+</div>
                             
 
                 <article id="post-2">
@@ -146,13 +149,62 @@
 
                         <img id="laptopPicture" src="assets/img/images/post2.jpg" alt="Laptop" />
 
-                        <div class="reactpost2">
-                            <button onclick="Toggle2()" id="btnh2" class="btn"><i class="fas fa-heart"></i></button>
+                        <div class="reactspost2">
+                            <div class="LikeButton" >
+                            <button onclick="Toggle2(),ondblclick= countClick2() " id="btnh2" class="btn"><i class="fas fa-heart"></i></button>
+                            <p id="heartCount"></p>
                         </div>
-                        <img id="commenticon" src="assets/img/icons/commenter.png" alt="Comment icon" />
-                        <img id="shareicon" src="assets/img/icons/envoyer.png" alt="Share icon" />
-                        <span>Posté le Vendredi 28 Mars 2025</span>
-                    </div>
+                           
+                            <div class="commentBox">
+                                <button class="commentIcon" popovertarget="commentBox"><i
+                                        class="fa-solid fa-comment"></i></button>
+                                <div id="commentBox" popover>
+                                    <button popovertarget="commentBox" popovertargetaction="hide">X</button>
+                                    <input type="text" name="CommentBox" placeholder="Comment here" class="userComment">
+                                    <div class="buttons">
+                                        <button type="submit" abled id="publishBtn">Publish</button>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="retweetBox">
+                                <button class="retweetIcon" popovertarget="retweetBox"><i
+                                        class="fa-solid fa-retweet"></i></button>
+                                <div id="retweetBox" popover>
+                                    <button popovertarget="retweetBox" popovertargetaction="hide">X</button>
+                                    <input type="text" name="CommentBox" placeholder="Comment here" class="userComment">
+                                    <div class="buttons">
+                                        <button type="submit" abled id="publishBtn">Retweet</button>
+                                    </div> 
+                                </div>
+                            </div> 
+           </div>    
+            <span>Posté le Vendredi 28 Mars 2025</span>
+                </div>
+                <div class="UserComments">
+                <div id="com1"><p></p></div>
+                <div id="com2"><p></p></div>
+                </div>
+
+                <dialog id="favDialog">
+                    <form method="dialog">
+                      <p>
+                        <label>
+                  Post comment 
+                           
+                  <input type="text" name="comment" placeholder="Comment here" required>
+                        </label>
+                      </p>
+                      <menu>
+                        <button value="cancel">Annuler</button>
+                        <button id="confirmBtn" value="default">Confirmer</button>
+                      </menu>
+                    </form>
+                  </dialog>
+                  <p>
+                    <button id="showDialog">Mettre à jour les détails</button>
+                  </p>
+                  <output></output>
+
         </article>
 
         <article id="post-3">
@@ -167,17 +219,21 @@
             <div class="video">
                 <iframe class="video" src="assets/img/video/post3.mp4"></iframe>
           
-            </div> <div class="reactspost3">
-                <button onclick="Toggle3()" id="btnh3" class="btn"><i class="fas fa-heart"></i></button>
+            </div>
+             <div class="reactspost3">
+                <button onclick="Toggle3(),countClick3() " id="btnh3" class="btn"><i class="fas fa-heart"></i></button>
+                <p id="Countheart"></p>
 
                 <img id="commenticon" src="assets/img/icons/commenter.png" alt="Comment icon" />
                 <img id="shareicon" src="assets/img/icons/envoyer.png" alt="Share icon" />
-                <span>Posté le Vendredi 28 Mars 2025</span>
-
-            </div>
-
-            
-
+                
+</div><span>Posté le Vendredi 28 Mars 2025</span>
+        </div>
+        <div class="UserComments">
+        <div id="com5"><p></p></div>
+        <div id="com6"><p></p></div>
+        </div>
+    </article>         
             </section>
 
             <!--Message des Wilders-->
