@@ -63,14 +63,6 @@
 
             </div>
 
-<!--Sign up au lieu de log-out-->
-<form class="SignInForm">
-<input class="user" type="name" id="username" placeholder="Username" autocomplete="off">
-<input class="email" type="email" name="Email Adresse" placeholder="Email Adresse">
-<input class="password" type="password" name="password" placeholder="password">
-<input class="retype" type="password" name="password" placeholder=" Retype your password">
-<input class="signIn" type="submit" value="Sign Up">
-</form>
 
 <!--Section pour pouvoir faire un post-->
 <div class="NewPost">
@@ -94,9 +86,9 @@
                         in dignissimos quibusdam consequatur impedit asperiores laboriosam
                         necessitatibus quaerat aperiam. Consectetur, ipsam dolor minima
                         blanditiis perspiciatis enim sequi ab saepe. <br>
-                        <span>Posté le Vendredi 28 Mars 2025</span>
+                        
                     </p>
-
+<span>Posté le Vendredi 28 Mars 2025</span>
 
                     <div class="reactpost1">
                         <div class="LikeButton" class="Rating">
@@ -105,16 +97,27 @@
                             <p id="like"></p>
                         </div>
                         <div class="commentBox">
-                            <button class="commentIcon" popovertarget="commentBox"><i
+                            <dialog id="favDialog">
+                                <form method="dialog">
+                                  <p>
+                                    <label>
+                              Post comment 
+                                       
+                              <input type="text" name="comment" placeholder="Comment here">
+                                    </label>
+                                  </p>
+                                  <menu>
+                                    <button value="cancel">Annuler</button>
+                                    <button id="confirmBtn">Posté</button>
+                                  </menu>
+                                </form>
+                              </dialog>
+                              <p>
+                                <button id="showDialog"><i
                                     class="fa-solid fa-comment"></i></button>
-                            <div id="commentBox" popover>
-                                <button popovertarget="commentBox" popovertargetaction="hide">X</button>
-                                <input type="text" name="CommentBox" placeholder="Comment here" class="userComment">
-                                <div class="buttons">
-                                    <button type="submit" abled id="publishBtn">Publish</button>
-                                </div>
-                            </div>
-                        </div> 
+                              </p>
+                              <output></output>
+                </div>
                         <div class="retweetBox">
                             <button class="retweetIcon" popovertarget="retweetBox"><i
                                     class="fa-solid fa-retweet"></i></button>
@@ -126,12 +129,7 @@
                                 </div>
                             </div>
                         </div>
-</div>
-<div class="UserComments">
-<div id="com3"><p></p></div>
-<div id="com4"><p></p></div>
-</div>
-                            
+                </div>             
 
                 <article id="post-2">
                     <div class="profile-container">
@@ -150,17 +148,28 @@
                             <p id="heartCount"></p>
                         </div>
                            
-                            <div class="commentBox">
-                                <button class="commentIcon" popovertarget="commentBox"><i
-                                        class="fa-solid fa-comment"></i></button>
-                                <div id="commentBox" popover>
-                                    <button popovertarget="commentBox" popovertargetaction="hide">X</button>
-                                    <input type="text" name="CommentBox" placeholder="Comment here" class="userComment">
-                                    <div class="buttons">
-                                        <button type="submit" abled id="publishBtn">Publish</button>
-                                    </div>
-                                </div>
-                            </div> 
+                        <div class="commentBox2">
+                            <dialog id="favDialog2">
+                                <form method="dialog">
+                                  <p>
+                                    <label id="title2">
+                              Post comment 
+                                       
+                              <input id="input2" type="text" name="comment" placeholder="Comment here">
+                                    </label>
+                                  </p>
+                                  <menu>
+                                    <button value="cancel" >Annuler</button>
+                                    <button id="confirmBtn2">Posté</button>
+                                  </menu>
+                                </form>
+                              </dialog>
+                              <p>
+                                <button id="showDialog2"><i
+                                    class="fa-solid fa-comment"></i></button>
+                              </p>
+                              <output id="output2"></output>
+                </div> 
                             <div class="retweetBox">
                                 <button class="retweetIcon" popovertarget="retweetBox"><i
                                         class="fa-solid fa-retweet"></i></button>
@@ -174,31 +183,6 @@
                             </div> 
            </div>    
             <span>Posté le Vendredi 28 Mars 2025</span>
-                </div>
-                <div class="UserComments">
-                <div id="com1"><p></p></div>
-                <div id="com2"><p></p></div>
-                </div>
-
-                <dialog id="favDialog">
-                    <form method="dialog">
-                      <p>
-                        <label>
-                  Post comment 
-                           
-                  <input type="text" name="comment" placeholder="Comment here" required>
-                        </label>
-                      </p>
-                      <menu>
-                        <button value="cancel">Annuler</button>
-                        <button id="confirmBtn" value="default">Confirmer</button>
-                      </menu>
-                    </form>
-                  </dialog>
-                  <p>
-                    <button id="showDialog">Mettre à jour les détails</button>
-                  </p>
-                  <output></output>
 
         </article>
 
@@ -219,20 +203,46 @@
                 <button onclick="Toggle3(),countClick3() " id="btnh3" class="btn"><i class="fas fa-heart"></i></button>
                 <p id="Countheart"></p>
 
-                <img id="commenticon" src="assets/img/icons/commenter.png" alt="Comment icon" />
-                <img id="shareicon" src="assets/img/icons/envoyer.png" alt="Share icon" />
-                
+                <div class="commentBox3">
+                    <dialog id="favDialog3">
+                        <form method="dialog">
+                          <p>
+                            <label>
+                      Post comment 
+                               
+                      <input id="text3" type="text" name="comment" placeholder="Comment here" >
+                            </label>
+                          </p>
+                          <menu>
+                            <button value="cancel">Annuler</button>
+                            <button id="confirmBtn3">Posté</button>
+                          </menu>
+                        </form>
+                      </dialog>
+                      <p>
+                        <button id="showDialog3"><i
+                            class="fa-solid fa-comment"></i></button>
+                      </p>
+                      <output id="output3"></output>
+                    </div>
+                      <div class="retweetBox">
+                        <button class="retweetIcon" popovertarget="retweetBox"><i
+                                class="fa-solid fa-retweet"></i></button>
+                        <div id="retweetBox" popover>
+                            <button popovertarget="retweetBox" popovertargetaction="hide">X</button>
+                            <input type="text" name="CommentBox" placeholder="Comment here" class="userComment">
+                            <div class="buttons">
+                                <button type="submit" abled id="publishBtn">Retweet</button>
+                            </div> 
+                        </div>
+
+        </div>                 
 </div><span>Posté le Vendredi 28 Mars 2025</span>
-        </div>
-        <div class="UserComments">
-        <div id="com5"><p></p></div>
-        <div id="com6"><p></p></div>
-        </div>
+
     </article>         
             </section>
 
             <!--Message des Wilders-->
-            <h2 id="messagesWilders">Messages des wilders</h2>
 
             <article id="wilder">
                 <h2 id="messagesWilders">Messages des wilders</h2>
