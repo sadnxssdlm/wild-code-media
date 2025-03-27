@@ -1,17 +1,14 @@
 /* NAVBAR */
-/* menu burger : click */
+
 const menuHamburger = document.querySelector(".menu-hamburger");
 const navLinks = document.querySelector(".nav-links");
 
 menuHamburger.addEventListener("click", () => {
   navLinks.classList.toggle("mobile-menu");
 });
-/*HEADER */
+//
 
 /*SLIDER */
-
-/* change d'image quand on slide  */
-/*Quand tu passe ta souris sur l'image elle s'agrandi */
 
 const slide = [
   "slider1.jpg",
@@ -28,11 +25,11 @@ function changeSlide(sens) {
   if (index < 0) index = slide.length - 1;
   document.getElementById("slider1").src = "assets/img/images/" + slide[index];
 }
-/* changes d'images toutes les 4sec (4000)  */
+
 setInterval("changeSlide(1)", 4000);
+
 /*STORIES */
 
-// Toutes les variables
 const stories = document.querySelectorAll(".story");
 const storiesModal = document.querySelector(".stories-modal");
 const modalStory = document.getElementById("modalstory");
@@ -69,7 +66,6 @@ storiesModal.addEventListener("click", (e) => {
 let heart1 = document.getElementById("btnh1");
 function Toggle1() {
   if (heart1.style.color === "red") {
-    // heart1.style.color = "grey";
   } else {
     heart1.style.color = "red";
   }
@@ -90,13 +86,6 @@ if (heart1.style.color === "red") {
 } else {
   heart1.style.color = "red";
 }
-
-/*publish*/
-/*créer un evenement pour pouvoir poster a la suite d'un post 
-des messages */
-
-/*retweet*/
-/* pouvoir le retweeter à la suite*/
 
 /*Intéraction post de commentaire*/
 const showButton = document.getElementById("showDialog");
@@ -123,19 +112,11 @@ confirmBtn.addEventListener("click", (event) => {
   event.preventDefault();
   favDialog.close(selectEl.value);
 });
-/*post 2*/
-
-/*Pouvoir publier à la suite d'un post des commentaires*/
-
-/*max commentaire = 3*/
-
-/*reactions*/
 
 /*like*/
 let heart2 = document.getElementById("btnh2");
 function Toggle2() {
   if (heart2.style.color === "red") {
-    // heart2.style.color = "grey";
   } else {
     heart2.style.color = "red";
   }
@@ -147,7 +128,6 @@ function countClick2() {
   console.log((heartCount.innerHTML = count));
 }
 
-/*Commentaire à poster*/
 const showButton2 = document.getElementById("showDialog2");
 const favDialog2 = document.getElementById("favDialog2");
 const publish = document.querySelector("output2");
@@ -165,18 +145,14 @@ favDialog2.addEventListener("close", (e) => {
       : `${favDialog2.returnValue}.`;
 });
 confirmBtn.addEventListener("click", (event) => {
-  event.preventDefault(); // Nous ne voulons pas soumettre ce faux formulaire
+  event.preventDefault();
   favDialog.close(selectEl.value);
 });
-/*post 3*/
-
-/*reactions*/
 
 /*like*/
 let heart3 = document.getElementById("btnh3");
 function Toggle3() {
   if (heart3.style.color === "red") {
-    // heart3.style.color = "grey";
   } else {
     heart3.style.color = "red";
   }
@@ -200,18 +176,12 @@ showButton3.addEventListener("click", () => {
   favDialog3.showModal();
 });
 
-// selectEl3.addEventListener("change", (e) => {
-//   confirmBtn3.value = selectEl3.value;
-// });
-
 favDialog3.addEventListener("close", (e) => {
   outputBox3.value =
     favDialog3.returnValue === "default"
       ? "Pas de valeur retournée."
       : `${favDialog.returnValue}.`;
 });
-
-/*Retweet*/
 
 /*WILDERSMSG */
 let comment = [
@@ -245,5 +215,3 @@ function ecrirePhrase() {
 }
 
 ecrirePhrase();
-
-/*FOOTER */
