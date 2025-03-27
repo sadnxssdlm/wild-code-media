@@ -101,7 +101,18 @@ function postRating() {
   }
 }
 
+/*publish*/
+/*créer un evenement pour pouvoir poster a la suite d'un post 
+des messages */
+
+/*retweet*/
+/* pouvoir le retweeter à la suite*/
+
 /*post 2*/
+
+/*Pouvoir publier à la suite d'un post des commentaires*/
+
+/*max commentaire = 3*/
 
 /*reactions*/
 
@@ -162,5 +173,5 @@ function ecrirePhrase() {
   }, 50);
 }
 ecrirePhrase();
-
+/*voir le code au dessus il y a un message sur la console qui bloque l'éxécution*/
 /*FOOTER */

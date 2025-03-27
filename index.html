@@ -32,6 +32,7 @@
                 </li>
             </ul>
 
+
         </nav>
         <img src="assets/img/icons/logo-burger-bar.png" alt="menu hamburger" class="menu-hamburger"></img>
         <div class="bg-header"></div>
@@ -67,7 +68,20 @@
 
             </div>
 
+<!--Sign up au lieu de log-out-->
+<form class="Sign In Form">
+<input type="name" id="username" placeholder="Username" autocomplete="off">
+<input type="email" name="Email Adresse" placeholder="Email Adresse">
+<input type="password" name="password" placeholder="password">
+<input type="password" name="password" placeholder=" Retype your password">
+<input type="submit" value="Sign Up">p
+</form>
 
+<!--Section pour pouvoir faire un post-->
+<div class="NewPost">
+<input type="text" name="text-area" placeholder="What's up ?">
+<input class="NPost" type="submit" value="Post">
+</div>
             <!--Posts-->
             <section class="posts">
                 <article id="post-1">
@@ -84,7 +98,8 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eius
                         in dignissimos quibusdam consequatur impedit asperiores laboriosam
                         necessitatibus quaerat aperiam. Consectetur, ipsam dolor minima
-                        blanditiis perspiciatis enim sequi ab saepe.
+                        blanditiis perspiciatis enim sequi ab saepe. <br>
+                        <span>Posté le Vendredi 28 Mars 2025</span>
                     </p>
 
 
@@ -100,7 +115,7 @@
                                     class="fa-solid fa-comment"></i></button>
                             <div id="commentBox" popover>
                                 <button popovertarget="commentBox" popovertargetaction="hide">X</button>
-                                <input type="text" placeholder="Comment here" class="userComment">
+                                <input type="text" name="CommentBox" placeholder="Comment here" class="userComment">
                                 <div class="buttons">
                                     <button type="submit" abled id="publishBtn">Publish</button>
                                 </div>
@@ -112,27 +127,19 @@
                                     class="fa-solid fa-retweet"></i></button>
                             <div id="retweetBox" popover>
                                 <button popovertarget="retweetBox" popovertargetaction="hide">X</button>
-                                <input type="text" placeholder="Comment here" class="userComment">
+                                <input type="text" name="CommentBox" placeholder="Comment here" class="userComment">
                                 <div class="buttons">
                                     <button type="submit" abled id="publishBtn">Retweet</button>
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-
-                </article>
+                            
 
                 <article id="post-2">
                     <div class="profile-container">
                         <img class="profile" src="assets/img/images/pp-one.png" alt="FA Jane Doe Profile Picture" />
                         <h2 class="username">Jane Doe</h2>
                     </div>
-                    <article id="post-2">
-                        <div class="profile-container">
-                            <img class="profile" src="assets/img/images/pp-one.png" alt="FA Jane Doe Profile Picture" />
-                            <h2 class="username">Jane Doe</h2>
-                        </div>
                         <div class="articletext">
                             <p class="articletitle">A Another Image.</p>
                         </div>
@@ -144,7 +151,8 @@
                         </div>
                         <img id="commenticon" src="assets/img/icons/commenter.png" alt="Comment icon" />
                         <img id="shareicon" src="assets/img/icons/envoyer.png" alt="Share icon" />
-        </div>
+                        <span>Posté le Vendredi 28 Mars 2025</span>
+                    </div>
         </article>
 
         <article id="post-3">
@@ -152,21 +160,23 @@
                 <img class="profile" src="assets/img/images/pp-two.png" alt="A Ayoub Doe Profile Picture" />
                 <h2 class="username">Ayoub Doe</h2>
             </div>
-
-            <div class="reactspost3">
-                <button onclick="Toggle3()" id="btnh3" class="btn"><i class="fas fa-heart"></i></button>
-
-                <img id="commenticon" src="assets/img/icons/commenter.png" alt="Comment icon" />
-                <img id="shareicon" src="assets/img/icons/envoyer.png" alt="Share icon" />
-            </div>
-
-            <div class="articletext">
+           <div class="articletext">
                 <p class="articletitle">A Another Video.</p>
             </div>
 
             <div class="video">
                 <iframe class="video" src="assets/img/video/post3.mp4"></iframe>
+          
+            </div> <div class="reactspost3">
+                <button onclick="Toggle3()" id="btnh3" class="btn"><i class="fas fa-heart"></i></button>
+
+                <img id="commenticon" src="assets/img/icons/commenter.png" alt="Comment icon" />
+                <img id="shareicon" src="assets/img/icons/envoyer.png" alt="Share icon" />
+                <span>Posté le Vendredi 28 Mars 2025</span>
+
             </div>
+
+            
 
             </section>
 

@@ -104,11 +104,14 @@
 
           /*  Main   */
           /* .Slider */
-          .slider {
+          /*partie slider fait tout décaler avec le display*/
+          
+          
+          /* .slider {
               padding-top: 2.5vh;
               display: flex;
               align-items: center;
-          }
+          } */
 
           #slider1 {
               background-position: center;
@@ -430,8 +433,37 @@ text-align: center;
           margin-top: 5px;
       }
 
-
-      
+#textbox{
+    width: 350px;
+    height: 80px;
+    top: 40%;
+    left: 10%;
+}  
+  
+  .com1{
+    border: gray solid;
+    width: 5px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .publie1{
+    text-align: end;
+  }
+  
+  .icontweet{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
       /* version tablette  */
 
 
