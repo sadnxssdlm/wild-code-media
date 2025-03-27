@@ -4,52 +4,220 @@
 
 <head>
 
-    <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Wild Code Media</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
+  <title>Wild Code Media</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 
 <body>
-    <header>
+  <header>
 
-        <nav class="nav-links">
+    <nav class="nav-links">
 
-            <div><img src="assets/img/images/logo.png" alt="Logo WCM" class="logo-WCM"></div>
-            <ul class="logo-nav">
-                <li><img src="assets/img/icons/logo-home.png" alt="logo Accueil" class="logo-acceuil">
-                    <a href="#" class="home">Accueil</a>
-                </li>
-                <li><img src="assets/img/icons/logo-user.png" alt="logo user profil" class="logo-user">
-                    <a href="#" class="profil">Profil</a>
-                </li>
-                <li><img src="assets/img/icons/logo-search.png" alt="logo search" class="logo-search"><a href="#"
-                        class="search">Search</a></li>
-                <li><img src="assets/img/icons/logo-disconnection.png" alt="logo disconnection"
-                        class="logo-disconnection"><a href="#" class="log-out">Log Out</a>
-                </li>
-            </ul>
+      <div><img src="assets/img/images/logo.png" alt="Logo WCM" class="logo-WCM"></div>
+      <ul class="logo-nav">
+        <li><img src="assets/img/icons/logo-home.png" alt="logo Accueil" class="logo-acceuil">
+          <a href="#" class="home">Accueil</a>
+        </li>
+        <li><img src="assets/img/icons/logo-user.png" alt="logo user profil" class="logo-user">
+          <a href="#" class="profil">Profil</a>
+        </li>
+        <li><img src="assets/img/icons/logo-search.png" alt="logo search" class="logo-search"><a href="#"
+            class="search">Search</a></li>
+        <li><img src="assets/img/icons/logo-disconnection.png" alt="logo disconnection" class="logo-disconnection"><a
+            href="#" class="log-out">Log Out</a>
+        </li>
+      </ul>
 
 
-        </nav>
-        <img src="assets/img/icons/logo-burger-bar.png" alt="menu hamburger" class="menu-hamburger"></img>
-        <div class="bg-header"></div>
-        <h1> </h1>
-    </header>
+    </nav>
+    <img src="assets/img/icons/logo-burger-bar.png" alt="menu hamburger" class="menu-hamburger"></img>
+    <div class="bg-header"></div>
+    <h1> </h1>
+  </header>
 
-    <main>
+  <main>
 
-        <!--Slider-->
 
-            <div class="slider">
-                <img id="slider1" src="assets/img/images/slider1.jpg" alt="Photo de Tech" />
-                <div id="back" onclick="changeSlide(-1)">&lt;</div>
-                <div id="next" onclick="changeSlide(1)">&gt;</div>
+
+
+<<<<<<< HEAD
+    <!--Slider-->
+    <div class="slider">
+
+
+      <div class="slider">
+        <img id="slider1" src="assets/img/images/slider1.jpg" alt="Photo de Tech" />
+        <div id="back" onclick="changeSlide(-1)">&lt;</div>
+        <div id="next" onclick="changeSlide(1)">&gt;</div>
+      </div>>
+    </div>
+    <!--Story-->
+
+    <div id="stories">
+      <img class="story" src="assets/img/images/story-1.png" alt="Story 1 " />
+      <img class="story" src="assets/img/images/story-2.png" alt="Story 2" />
+      <img class="story" src="assets/img/images/story-3.png" alt="Story 3" />
+    </div>
+
+    <div class="stories-modal">
+      <button class="close-btn">X</button>
+      <img id="modalstory" src="" alt="Story en grand">
+
+    </div>
+
+    <!--Sign up au lieu de log-out-->
+    <form class="SignInForm">
+      <input class="user" type="name" id="username" placeholder="Username" autocomplete="off">
+      <input class="email" type="email" name="Email Adresse" placeholder="Email Adresse">
+      <input class="password" type="password" name="password" placeholder="password">
+      <input class="retype" type="password" name="password" placeholder=" Retype your password">
+      <input class="signIn" type="submit" value="Sign Up">
+    </form>
+
+    <!--Section pour pouvoir faire un post-->
+    <div class="NewPost">
+      <input class="NNewPost" type="text" name="text-area" placeholder="What's up ?">
+      <input class="NPost" type="submit" value="Post">
+    </div>
+    <!--Posts-->
+    <section class="posts">
+      <article id="post-1">
+        <div class="profile-container">
+          <img class="profile" src="assets/img/images/pp-three.png" alt="A John Doe Profile Picture" />
+          <h2 class="username">Joe Doe</h2>
+        </div>
+
+        <div class="articletext">
+          <p class="articletitle">A Another Text.</p>
+        </div>
+
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eius
+          in dignissimos quibusdam consequatur impedit asperiores laboriosam
+          necessitatibus quaerat aperiam. Consectetur, ipsam dolor minima
+          blanditiis perspiciatis enim sequi ab saepe. <br>
+          <span>Posté le Vendredi 28 Mars 2025</span>
+        </p>
+
+
+        <div class="reactpost1">
+          <div class="LikeButton" class="Rating">
+            <button onclick="Toggle1(),ondblclick= countClicks1()" id="btnh1" class="btn"><i
+                class="fas fa-heart"></i></a></button>
+            <p id="like"></p>
+          </div>
+          <div class="commentBox">
+            <button class="commentIcon" popovertarget="commentBox"><i class="fa-solid fa-comment"></i></button>
+            <div id="commentBox" popover>
+              <button popovertarget="commentBox" popovertargetaction="hide">X</button>
+              <input type="text" name="CommentBox" placeholder="Comment here" class="userComment">
+              <div class="buttons">
+                <button type="submit" abled id="publishBtn">Publish</button>
+              </div>
             </div>
-</div>
-            <!--Story-->
+          </div>
+          <div class="retweetBox">
+            <button class="retweetIcon" popovertarget="retweetBox"><i class="fa-solid fa-retweet"></i></button>
+            <div id="retweetBox" popover>
+              <button popovertarget="retweetBox" popovertargetaction="hide">X</button>
+              <input type="text" name="CommentBox" placeholder="Comment here" class="userComment">
+              <div class="buttons">
+                <button type="submit" abled id="publishBtn">Retweet</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="UserComments">
+          <div id="com3">
+            <p></p>
+          </div>
+          <div id="com4">
+            <p></p>
+          </div>
+        </div>
+
+
+        <article id="post-2">
+          <div class="profile-container">
+            <img class="profile" src="assets/img/images/pp-one.png" alt="FA Jane Doe Profile Picture" />
+            <h2 class="username">Jane Doe</h2>
+          </div>
+          <div class="articletext">
+            <p class="articletitle">A Another Image.</p>
+          </div>
+
+          <img id="laptopPicture" src="assets/img/images/post2.jpg" alt="Laptop" />
+
+          <div class="reactspost2">
+            <div class="LikeButton">
+              <button onclick="Toggle2(),ondblclick= countClick2() " id="btnh2" class="btn"><i
+                  class="fas fa-heart"></i></button>
+              <p id="heartCount"></p>
+            </div>
+
+            <div class="commentBox">
+              <button class="commentIcon" popovertarget="commentBox"><i class="fa-solid fa-comment"></i></button>
+              <div id="commentBox" popover>
+                <button popovertarget="commentBox" popovertargetaction="hide">X</button>
+                <input type="text" name="CommentBox" placeholder="Comment here" class="userComment">
+                <div class="buttons">
+                  <button type="submit" abled id="publishBtn">Publish</button>
+                </div>
+              </div>
+            </div>
+            <div class="retweetBox">
+              <button class="retweetIcon" popovertarget="retweetBox"><i class="fa-solid fa-retweet"></i></button>
+              <div id="retweetBox" popover>
+                <button popovertarget="retweetBox" popovertargetaction="hide">X</button>
+                <input type="text" name="CommentBox" placeholder="Comment here" class="userComment">
+                <div class="buttons">
+                  <button type="submit" abled id="publishBtn">Retweet</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span>Posté le Vendredi 28 Mars 2025</span>
+          </div>
+          <div class="UserComments">
+            <div id="com1">
+              <p></p>
+            </div>
+            <div id="com2">
+              <p></p>
+            </div>
+          </div>
+
+          <dialog id="favDialog">
+            <form method="dialog">
+              <p>
+                <label>
+                  Post comment
+
+                  <input type="text" name="comment" placeholder="Comment here" required>
+                </label>
+              </p>
+              <menu>
+                <button value="cancel">Annuler</button>
+                <button id="confirmBtn" value="default">Confirmer</button>
+              </menu>
+            </form>
+          </dialog>
+          <p>
+            <button id="showDialog">Mettre à jour les détails</button>
+          </p>
+          <output></output>
+=======
+        <!--Slider-->
+        <div class="slider">
+            <img id="slider1" src="assets/img/images/slider1.jpg" alt="Photo de Tech" />
+            <div id="back" onclick="changeSlide(-1)">&lt;</div>
+            <div id="next" onclick="changeSlide(1)">&gt;</div>
+        </div>
+        <!--Story-->
 
         <div id="stories">
             <img class="story" src="assets/img/images/story-1.png" alt="Story 1 " />
@@ -63,61 +231,106 @@
 
         </div>
 
-
-        <!--Section pour pouvoir faire un post-->
-        <div class="NewPost">
-            <input class="NNewPost" type="text" name="text-area" placeholder="What's up ?">
-            <input class="NPost" type="submit" value="Post">
-        </div>
         <!--Posts-->
         <section class="posts">
             <article id="post-1">
                 <div class="profile-container">
                     <img class="profile" src="assets/img/images/pp-three.png" alt="A John Doe Profile Picture" />
-                    <h2 class="username">Joe Doe</h2>
+                    <h2 class="username">Damien</h2>
                 </div>
 
                 <div class="articletext">
                     <p class="articletitle">A Another Text.</p>
                 </div>
 
-                    <p class="text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eius
-                        in dignissimos quibusdam consequatur impedit asperiores laboriosam
-                        necessitatibus quaerat aperiam. Consectetur, ipsam dolor minima
-                        blanditiis perspiciatis enim sequi ab saepe. <br>
-                        
-                    </p>
-<span>Posté le Vendredi 28 Mars 2025</span>
+                <p class="text">
+                    L'informatique et le développement web sont au cœur de l'innovation technologique. Le développement
+                    web permet de créer des applications et des sites dynamiques à l'aide de technologies comme HTML,
+                    CSS, JavaScript et des frameworks comme React. Les outils côté serveur, tels que Node.js et Python,
+                    permettent d'assurer une gestion efficace des données et des performances. L'intégration continue
+                    (CI) et le déploiement continu (CD) optimisent la livraison des applications. La sécurité, avec des
+                    protocoles comme HTTPS, est essentielle pour protéger les données des utilisateurs. Enfin, le
+                    développement mobile et les Progressive Web Apps (PWA) gagnent en popularité.<br>
+                    <span>Posté le Vendredi 28 Mars 2025</span>
+                </p>
 
-                    <div class="reactpost1">
-                        <div class="LikeButton" class="Rating">
-                            <button onclick="Toggle1(),ondblclick= countClicks1()" id="btnh1" class="btn"><i
-                                    class="fas fa-heart"></i></a></button>
-                            <p id="like"></p>
+
+                <div class="reactpost1">
+                    <div class="LikeButton" class="Rating">
+                        <button onclick="Toggle1(),ondblclick= countClicks1()" id="btnh1" class="btn"><i
+                                class="fas fa-heart"></i></a></button>
+                        <p id="like"></p>
+                    </div>
+                    <div class="commentBox">
+                        <button class="commentIcon" popovertarget="commentBox"><i
+                                class="fa-solid fa-comment"></i></button>
+                        <div id="commentBox" popover>
+                            <button popovertarget="commentBox" popovertargetaction="hide">X</button>
+                            <input type="text" name="CommentBox" placeholder="Comment here" class="userComment">
+                            <div class="buttons">
+                                <button type="submit" abled id="publishBtn">Publish</button>
+                            </div>
                         </div>
-                        <div class="commentBox">
-                            <dialog id="favDialog">
-                                <form method="dialog">
-                                  <p>
-                                    <label>
-                              Post comment 
-                                       
-                              <input type="text" name="comment" placeholder="Comment here">
-                                    </label>
-                                  </p>
-                                  <menu>
-                                    <button value="cancel">Annuler</button>
-                                    <button id="confirmBtn">Posté</button>
-                                  </menu>
-                                </form>
-                              </dialog>
-                              <p>
-                                <button id="showDialog"><i
-                                    class="fa-solid fa-comment"></i></button>
-                              </p>
-                              <output></output>
+                    </div>
+                    <div class="retweetBox">
+                        <button class="retweetIcon" popovertarget="retweetBox"><i
+                                class="fa-solid fa-retweet"></i></button>
+                        <div id="retweetBox" popover>
+                            <button popovertarget="retweetBox" popovertargetaction="hide">X</button>
+                            <input type="text" name="CommentBox" placeholder="Comment here" class="userComment">
+                            <div class="buttons">
+                                <button type="submit" abled id="publishBtn">Retweet</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="UserComments">
+                    <div id="com3">
+                        <p></p>
+                    </div>
+                    <div id="com4">
+                        <p></p>
+                    </div>
+                </div>
+
+
+                <article id="post-2">
+                    <div class="profile-container">
+                        <img class="profile" src="assets/img/images/pp-one.png" alt="FA Jane Doe Profile Picture" />
+                        <h2 class="username">Amandine</h2>
+                    </div>
+                    <div class="articletext">
+                        <p class="articletitle">A Another Image.</p>
+                    </div>
+                    <div class="articletext">
+                        <p class="articletitle">A Another Image.</p>
+                    </div>
+
+                    <img id="laptopPicture" src="assets/img/images/post2.jpg" alt="Laptop" />
+                    <img id="laptopPicture" src="assets/img/images/post2.jpg" alt="Laptop" />
+
+                    <div class="reactspost2">
+                        <div class="LikeButton">
+                            <button onclick="Toggle2(),ondblclick= countClick2() " id="btnh2" class="btn"><i
+                                    class="fas fa-heart"></i></button>
+                    <div class="reactspost2">
+                        <div class="LikeButton">
+                            <button onclick="Toggle2(),ondblclick= countClick2() " id="btnh2" class="btn"><i
+                                    class="fas fa-heart"></i></button>
+                            <p id="heartCount"></p>
+                        </div>
+
+                        <div class="commentBox">
+                            <button class="commentIcon" popovertarget="commentBox"><i
+                                    class="fa-solid fa-comment"></i></button>
+                            <div id="commentBox" popover>
+                                <button popovertarget="commentBox" popovertargetaction="hide">X</button>
+                                <input type="text" name="CommentBox" placeholder="Comment here" class="userComment">
+                                <div class="buttons">
+                                    <button type="submit" abled id="publishBtn">Publish</button>
+                                </div>
+                            </div>
+                        </div>
                         <div class="retweetBox">
                             <button class="retweetIcon" popovertarget="retweetBox"><i
                                     class="fa-solid fa-retweet"></i></button>
@@ -129,68 +342,92 @@
                                 </div>
                             </div>
                         </div>
-                </div>             
-
-                <article id="post-2">
-                    <div class="profile-container">
-                        <img class="profile" src="assets/img/images/pp-one.png" alt="FA Jane Doe Profile Picture" />
-                        <h2 class="username">Jane Doe</h2>
                     </div>
-                    <div class="articletext">
-                        <p class="articletitle">A Another Image.</p>
+                    <span>Posté le Vendredi 28 Mars 2025</span>
                     </div>
-
-                    <img id="laptopPicture" src="assets/img/images/post2.jpg" alt="Laptop" />
-
-                    <div class="reactspost2">
-                        <div class="LikeButton">
-                            <button onclick="Toggle2(),ondblclick= countClick2() " id="btnh2" class="btn"><i
-                                    class="fas fa-heart"></i></button>
-                            <p id="heartCount"></p>
+                    <div class="UserComments">
+                        <div id="com1">
+                            <p></p>
                         </div>
-                           
-                        <div class="commentBox2">
-                            <dialog id="favDialog2">
-                                <form method="dialog">
-                                  <p>
-                                    <label id="title2">
-                              Post comment 
-                                       
-                              <input id="input2" type="text" name="comment" placeholder="Comment here">
-                                    </label>
-                                  </p>
-                                  <menu>
-                                    <button value="cancel" >Annuler</button>
-                                    <button id="confirmBtn2">Posté</button>
-                                  </menu>
-                                </form>
-                              </dialog>
-                              <p>
-                                <button id="showDialog2"><i
-                                    class="fa-solid fa-comment"></i></button>
-                              </p>
-                              <output id="output2"></output>
-                </div> 
-                            <div class="retweetBox">
-                                <button class="retweetIcon" popovertarget="retweetBox"><i
-                                        class="fa-solid fa-retweet"></i></button>
-                                <div id="retweetBox" popover>
-                                    <button popovertarget="retweetBox" popovertargetaction="hide">X</button>
-                                    <input type="text" name="CommentBox" placeholder="Comment here" class="userComment">
-                                    <div class="buttons">
-                                        <button type="submit" abled id="publishBtn">Retweet</button>
-                                    </div> 
-                                </div>
-                            </div> 
-           </div>    
-            <span>Posté le Vendredi 28 Mars 2025</span>
+                        <div id="com2">
+                            <p></p>
+                        </div>
+                    </div>
 
+                    <dialog id="favDialog">
+                        <form method="dialog">
+                            <p>
+                                <label>
+                                    Post comment
+>>>>>>> 5dd4bb3bdd0805f1fd651b255e47f8ee6e972215
+
+                                    <input type="text" name="comment" placeholder="Comment here" required>
+                                </label>
+                            </p>
+                            <menu>
+                                <button value="cancel">Annuler</button>
+                                <button id="confirmBtn" value="default">Confirmer</button>
+                            </menu>
+                        </form>
+                    </dialog>
+                    <p>
+                        <button id="showDialog">Mettre à jour les détails</button>
+                    </p>
+                    <output></output>
+
+<<<<<<< HEAD
+        <article id="post-3">
+          <div class="profile-container">
+            <img class="profile" src="assets/img/images/pp-two.png" alt="A Ayoub Doe Profile Picture" />
+            <h2 class="username">Ayoub Doe</h2>
+          </div>
+          <div class="articletext">
+            <p class="articletitle">A Another Video.</p>
+          </div>
+
+          <div class="video">
+            <iframe class="video" src="assets/img/video/post3.mp4"></iframe>
+
+          </div>
+          <div class="reactspost3">
+            <button onclick="Toggle3(),countClick3() " id="btnh3" class="btn"><i class="fas fa-heart"></i></button>
+            <p id="Countheart"></p>
+
+            <img id="commenticon" src="assets/img/icons/commenter.png" alt="Comment icon" />
+            <img id="shareicon" src="assets/img/icons/envoyer.png" alt="Share icon" />
+
+          </div><span>Posté le Vendredi 28 Mars 2025</span>
+          </div>
+          <div class="UserComments">
+            <div id="com5">
+              <p></p>
+            </div>
+            <div id="com6">
+              <p></p>
+            </div>
+          </div>
+        </article>
+    </section>
+
+    <!--Message des Wilders-->
+    <h2 id="messagesWilders">Messages des wilders</h2>
+
+    <article id="wilder">
+      <h2 id="messagesWilders">Messages des wilders</h2>
+      <span class="txt1"></span>
+    </article>
+  </main>
+
+  <!--JavaScript-->
+  <script src="/assets/js/script.js"></script>
+  <script src="https://kit.fontawesome.com/b03f274dc8.js" crossorigin="anonymous"></script>
+=======
                 </article>
 
                 <article id="post-3">
                     <div class="profile-container">
                         <img class="profile" src="assets/img/images/pp-two.png" alt="A Ayoub Doe Profile Picture" />
-                        <h2 class="username">Ayoub Doe</h2>
+                        <h2 class="username">Ayoub</h2>
                     </div>
                     <div class="articletext">
                         <p class="articletitle">A Another Video.</p>
@@ -205,60 +442,46 @@
                                 class="fas fa-heart"></i></button>
                         <p id="Countheart"></p>
 
-                <div class="commentBox3">
-                    <dialog id="favDialog3">
-                        <form method="dialog">
-                          <p>
-                            <label>
-                      Post comment 
-                               
-                      <input id="text3" type="text" name="comment" placeholder="Comment here" >
-                            </label>
-                          </p>
-                          <menu>
-                            <button value="cancel">Annuler</button>
-                            <button id="confirmBtn3">Posté</button>
-                          </menu>
-                        </form>
-                      </dialog>
-                      <p>
-                        <button id="showDialog3"><i
-                            class="fa-solid fa-comment"></i></button>
-                      </p>
-                      <output id="output3"></output>
+                        <img id="commenticon" src="assets/img/icons/commenter.png" alt="Comment icon" />
+                        <img id="shareicon" src="assets/img/icons/envoyer.png" alt="Share icon" />
+
+                    </div><span>Posté le Vendredi 28 Mars 2025</span>
                     </div>
-                      <div class="retweetBox">
-                        <button class="retweetIcon" popovertarget="retweetBox"><i
-                                class="fa-solid fa-retweet"></i></button>
-                        <div id="retweetBox" popover>
-                            <button popovertarget="retweetBox" popovertargetaction="hide">X</button>
-                            <input type="text" name="CommentBox" placeholder="Comment here" class="userComment">
-                            <div class="buttons">
-                                <button type="submit" abled id="publishBtn">Retweet</button>
-                            </div> 
+                    <div class="UserComments">
+                        <div id="com5">
+                            <p></p>
                         </div>
+                        <div id="com6">
+                            <p></p>
+                        </div>
+                    </div>
+                </article>
+        </section>
 
-        </div>                 
-</div><span>Posté le Vendredi 28 Mars 2025</span>
-
-    </article>         
-            </section>
-
-            <!--Message des Wilders-->
-
-            <article id="wilder">
-                <h2 id="messagesWilders">Messages des wilders</h2>
-                <span class="txt1"></span>
-            </article>
+        <!--Message des Wilders-->
+        <article id="wilder">
+            <h2 id="messagesWilders">Messages des wilders</h2>
+            <span class="txt1"></span>
+        </article>
     </main>
 
     <!--JavaScript-->
     <script src="/assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/b03f274dc8.js" crossorigin="anonymous"></script>
+>>>>>>> 5dd4bb3bdd0805f1fd651b255e47f8ee6e972215
 
 </body>
 
 <footer class="ending">
+<<<<<<< HEAD
+  <!-- <img src="assets/img/images/logo.png" alt="Logo de WCM" />-->
+  <ul id="aPropos">
+    <li><a href="#"></a>Mentions légales |</li>
+    <li><a href="#"></a> A propos |</li>
+    <li><a href="#"></a> Conditions d'utilisation</li>
+  </ul>
+  <div class="credits">
+=======
     <!-- <img src="assets/img/images/logo.png" alt="Logo de WCM" />-->
     <ul id="aPropos">
         <li><a href="#"></a>Mentions légales |</li>
@@ -268,10 +491,13 @@
     <div class="credits">
 
         <p>&copy;2025 Wild Code Media </p>
-        <a href="https://www.flaticon.com/fr/icones-gratuites/commentaire" title="commentaire icônes">Commentaire icônes
-            créées par JessHG - Flaticon</a>
     </div>
+>>>>>>> 5dd4bb3bdd0805f1fd651b255e47f8ee6e972215
 
+    <p>&copy;2025 Wild Code Media</p>
+    <a href="https://www.flaticon.com/fr/icones-gratuites/commentaire" title="commentaire icônes">Commentaire icônes
+      créées par JessHG - Flaticon</a>
+  </div>
 </footer>
 
 </html>

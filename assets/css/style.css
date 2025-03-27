@@ -129,11 +129,16 @@
         right: 5.5vh;
     }
 
+
+    li {
+        list-style: none;
+    }
+
+
     /*  Stories  */
     #stories {
         padding-left: 45px;
         padding-bottom: 5px;
-        box-shadow: 0 0 10px;
     }
 
     .story {
@@ -254,15 +259,6 @@
 
     }
 
-    .userComment {
-        width: 320px;
-        height: 60px;
-        padding: 10px;
-        border: none;
-        border-bottom: grey solid;
-        text-align: center;
-    }
-
     #publish {
         margin: 10px;
         padding: 5px;
@@ -325,25 +321,6 @@
     }
 
     /*Section commentaire sous les post*/
-    .UserComments {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #com1,
-    #com2,
-    #com3,
-    #com4,
-    #com5,
-    #com6 {
-        border: transparent;
-        width: 340px;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 5px;
-        box-shadow: 5px 5px 5px 5px grey;
-    }
 
 
     /*React post 2*/
@@ -373,21 +350,22 @@
         width: 55vh;
     }
 
-    #wilder {
-        border: solid #FFFDFD;
-        box-shadow: 1px 1px 1px black;
-        border-radius: 20vh;
-        margin: 3vh;
-        padding: 20px;
-    }
+
 
     /* wilders*/
     .wilder {
         border: solid rgb(0, 0, 0);
-        border-radius: 20px;
+        border-radius: 10x;
         padding: 20px;
     }
 
+    #wilder {
+        border: solid #460ee0;
+        box-shadow: 1px 1px 1px rgb(128, 14, 180);
+        border-radius: 5vh;
+        margin: 3vh;
+        padding: 20px;
+    }
 
     /*FOOTER*/
 
@@ -406,6 +384,7 @@
         list-style-type: none;
         padding: 0;
         margin: 0;
+        margin-bottom: 1vh;
     }
 
     #aPropos a {
@@ -414,7 +393,7 @@
     }
 
     #aPropos li {
-        margin: 0 5px;
+        margin: 0 0.1vh;
     }
 
     .credits {
@@ -422,12 +401,14 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin-bottom: 1vh;
     }
 
     .credits a {
         color: white;
         font-size: 0.8em;
         margin-top: 5px;
+
     }
 }
 
@@ -463,6 +444,9 @@
         padding-left: 10vh;
     }
 
+    .home,
+    .profil,
+    .search,
     .log-out {
         list-style: none;
         color: white;
@@ -549,8 +533,6 @@
     #stories {
         padding-left: 45px;
         padding-bottom: 5px;
-        box-shadow: 0 0 10px;
-
     }
 
     .story {
@@ -639,24 +621,64 @@
 
     /* Wilders*/
 
+    /* wilders*/
     .wilder {
         border: solid rgb(0, 0, 0);
-        border-radius: 20px;
+        border-radius: 10x;
         padding: 20px;
     }
 
-    #messagesWilders {
-        text-align: center;
+    #wilder {
+        border: solid #460ee0;
+        box-shadow: 1px 1px 1px rgb(128, 14, 180);
+        border-radius: 5vh;
+        margin: 3vh;
+        padding: 20px;
     }
 
 
     /*FOOTER*/
 
-    #ending {
+    .ending {
+        padding-top: 3vh;
+        background: var(--colorgradient1);
+        color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+    #aPropos {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #aPropos a {
+        color: white;
+        text-decoration: none;
+    }
+
+    #aPropos li {
+        margin: 0 5px;
+    }
+
+    .credits {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .credits a {
+        color: white;
+        font-size: 0.8em;
+        margin-top: 5px;
+    }
+
+
 }
 
 /* VERSION DESKTOP */
@@ -786,7 +808,6 @@
         padding-left: 22vh;
         padding-top: 5vh;
         padding-bottom: 1vh;
-        box-shadow: 0 0 10px;
 
     }
 
@@ -901,19 +922,21 @@
 
     }
 
-
     /* wilders*/
     .wilder {
         border: solid rgb(0, 0, 0);
-        border-radius: 20px;
+        border-radius: 10x;
         padding: 20px;
-        font-size: xx-large;
     }
 
-    #messagesWilders {
-        text-align: center;
-        font-size: xx-large;
+    #wilder {
+        border: solid #460ee0;
+        box-shadow: 1px 1px 1px rgb(128, 14, 180);
+        border-radius: 5vh;
+        margin: 3vh;
+        padding: 20px;
     }
+
 
     /*FOOTER*/
     .ending {
