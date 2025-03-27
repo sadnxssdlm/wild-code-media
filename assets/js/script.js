@@ -117,6 +117,33 @@ document.getElementById("com3").innerHTML = userData.com3;
 document.getElementById("com4").innerHTML = userData.com4;
 document.getElementById("com5").innerHTML = userData.com5;
 document.getElementById("com6").innerHTML = userData.com6;
+
+const showButton = document.getElementById("showDialog");
+const favDialog = document.getElementById("favDialog");
+const outputBox = document.querySelector("output");
+const selectEl = favDialog.querySelector("input");
+const confirmBtn = favDialog.querySelector("#confirmBtn");
+
+showButton.addEventListener("click", () => {
+  favDialog.showModal();
+});
+
+selectEl.addEventListener("change", (e) => {
+  confirmBtn.value = selectEl.value;
+});
+
+favDialog.addEventListener("close", (e) => {
+  outputBox.value =
+    favDialog.returnValue === "default"
+      ? "Pas de valeur retournée."
+      : `${favDialog.returnValue}.`;
+});
+
+confirmBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  favDialog.close(selectEl.value);
+});
+
 /*post 2*/
 
 /*Pouvoir publier à la suite d'un post des commentaires*/
