@@ -180,7 +180,6 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        padding: 20px;
         background-color: #ffffff;
     }
 
@@ -224,6 +223,7 @@
     }
 
     .articletitle {
+        font-weight: 600;
         margin: 5px;
     }
 
@@ -564,11 +564,11 @@
     }
 
     #back {
-        left: 12.5vh;
+        left: 14vh;
     }
 
     #next {
-        right: 12.5vh;
+        right: 14vh;
     }
 
     /*  Stories  */
@@ -662,6 +662,7 @@
     .articletitle {
         margin: 5px;
         font-size: 20px;
+        font-weight: 600;
     }
 
     .text {
