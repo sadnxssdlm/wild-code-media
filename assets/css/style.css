@@ -400,12 +400,7 @@
     }
 
     /* wilders*/
-    .wilder {
-        border: solid rgb(0, 0, 0);
-        border-radius: 10x;
-        padding: 20px;
-    }
-
+  
     #wilder {
         border: solid #460ee0;
         box-shadow: 1px 1px 1px rgb(128, 14, 180);
@@ -833,11 +828,7 @@
     }
 
     /* wilders*/
-    .wilder {
-        border: solid rgb(0, 0, 0);
-        border-radius: 10x;
-        padding: 20px;
-    }
+  
 
     #wilder {
         border: solid #460ee0;
@@ -1158,7 +1149,6 @@
         color: gray;
         background: transparent;
         font-size: 25px;
-        margin: px;
     }
 
     #commentBox {
@@ -1288,11 +1278,7 @@
     }
 
     /* wilders*/
-    .wilder {
-        border: solid rgb(0, 0, 0);
-        border-radius: 10x;
-        padding: 20px;
-    }
+ 
 
     #wilder {
         border: solid #460ee0;
