@@ -19,7 +19,7 @@ const slide = [
     "slider6.avif",
     "slider7.jpg",
     "slider8.jpg",
-    "sldier9.jpg"
+    "slider9.jpg"
 ];
 let index = 0;
 function changeSlide(sens) {
