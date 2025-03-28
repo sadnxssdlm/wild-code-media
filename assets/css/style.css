@@ -21,7 +21,7 @@
 
     /*HEADER*/
     .bg-header {
-        background-image: url("../img/images/background.jpg)");
+        background-image: url(../img/images/background.jpg);
         height: 25vh;
         background-size: cover;
         background-position: center;
@@ -120,11 +120,11 @@
     }
 
     #back {
-        left: 8vh;
+        left: 6vh;
     }
 
     #next {
-        right: 8vh;
+        right: 6vh;
     }
 
     li {
@@ -463,7 +463,7 @@
 
     /*HEADER*/
     .bg-header {
-        background-image: url(/assets/img/images/background.jpg);
+        background-image: url(../img/images/background.jpg);
         height: 22vh;
         background-size: cover;
         background-position: center;
@@ -895,7 +895,7 @@
     /*HEADER*/
     /*Header*/
     .bg-header {
-        background-image: url(/assets/img/images/background.jpg);
+        background-image: url(../img/images/background.jpg);
         height: 40vh;
         background-size: cover;
         background-position: center;
