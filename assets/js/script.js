@@ -65,26 +65,22 @@ storiesModal.addEventListener("click", (e) => {
 
 let heart1 = document.getElementById("btnh1");
 function Toggle1() {
-  if (heart1.style.color === "red") {
+  if (heart1.style.color === "grey") {
   } else {
     heart1.style.color = "red";
   }
 }
-
 let like = document.getElementById("like");
-let count = 0;
+let count = 1;
+let count1 = 6;
+let count2 = 3;
+let count3 = 10;
 
 function countClicks1() {
-  if ((count1 = count + 1)) {
-    count = count + 1;
+  if ((count = count1 + 1)) {
+    count1 = count1 + 1;
   }
   console.log((like.innerHTML = count));
-}
-
-if (heart1.style.color === "red") {
-  heart1.style.color = "grey";
-} else {
-  heart1.style.color = "red";
 }
 
 /*Intéraction post de commentaire*/
@@ -116,14 +112,15 @@ confirmBtn.addEventListener("click", (event) => {
 /*like*/
 let heart2 = document.getElementById("btnh2");
 function Toggle2() {
-  if (heart2.style.color === "red") {
+  if (heart2.style.color === "grey") {
   } else {
     heart2.style.color = "red";
   }
 }
+
 function countClick2() {
-  if ((count2 = count + 1)) {
-    count = count + 1;
+  if ((count = count2 + 1)) {
+    count2 = count2 + 1;
   }
   console.log((heartCount.innerHTML = count));
 }
@@ -152,15 +149,15 @@ confirmBtn.addEventListener("click", (event) => {
 /*like*/
 let heart3 = document.getElementById("btnh3");
 function Toggle3() {
-  if (heart3.style.color === "red") {
+  if (heart3.style.color === "grey") {
   } else {
     heart3.style.color = "red";
   }
 }
 
 function countClick3() {
-  if ((count3 = count + 1)) {
-    count = count + 1;
+  if ((count = count3 + 1)) {
+    count3 = count3 + 1;
   }
   console.log((Countheart.innerHTML = count));
 }
