@@ -43,13 +43,13 @@
 
         <!--Slider-->
 
-            <div class="slider">
-                <img id="slider1" src="../assets/img/images/slider1.jpg" alt="Photo de Tech" />
-                <div id="back" onclick="changeSlide(-1)">&lt;</div>
-                <div id="next" onclick="changeSlide(1)">&gt;</div>
-            </div>
-</div>
-            <!--Story-->
+        <div class="slider">
+            <img id="slider1" src="../assets/img/images/slider1.jpg" alt="Photo de Tech" />
+            <div id="back" onclick="changeSlide(-1)">&lt;</div>
+            <div id="next" onclick="changeSlide(1)">&gt;</div>
+        </div>
+        </div>
+        <!--Story-->
 
         <div id="stories">
             <img class="story" src="assets/img/images/story-1.png" alt="Story 1 " />
@@ -75,48 +75,102 @@
             <article id="post-1">
                 <div class="profile-container">
                     <img class="profile" src="assets/img/images/pp-three.png" alt="A John Doe Profile Picture" />
-                    <h2 class="username">Joe Doe</h2>
+                    <h2 class="username">Damien</h2>
                 </div>
 
                 <div class="articletext">
-                    <p class="articletitle">A Another Text.</p>
+                    <p class="articletitle">Pourquoi la veille informatique est t'elle importante ?</p>
                 </div>
 
-                    <p class="text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eius
-                        in dignissimos quibusdam consequatur impedit asperiores laboriosam
-                        necessitatibus quaerat aperiam. Consectetur, ipsam dolor minima
-                        blanditiis perspiciatis enim sequi ab saepe.
-                    </p>
-<span class="PostDate">Posté le Vendredi 28 Mars 2025</span>
+                <p class="text">
+                    La veille informatique est un processus essentiel pour suivre l’évolution rapide des technologies et
+                    des tendances du marché. Elle permet aux entreprises de se tenir informées des nouvelles menaces en
+                    matière de cybersécurité et des solutions innovantes. Grâce à la veille, les organisations peuvent
+                    anticiper les changements et adapter leur stratégie informatique en conséquence. Ce suivi constant
+                    facilite également l’identification des opportunités de développement et d’innovation. En somme, la
+                    veille informatique est cruciale pour maintenir la compétitivité et la sécurité dans un
+                    environnement numérique en constante mutation.
+                </p>
+                <span class="PostDate">Posté le Vendredi 28 Mars 2025</span>
 
-                    <div class="reactPost1">
-                        <div class="LikeButton" class="Rating">
-                            <button onclick="Toggle1(),ondblclick= countClicks1()" id="btnh1" class="btn"><i
-                                    class="fas fa-heart"></i></a></button>
-                            <p id="like"></p>
-                        </div>
-                        <div class="commentBox">
-                            <dialog id="favDialog">
-                                <form method="dialog">
-                                  <p>
+                <div class="reactPost1">
+                    <div class="LikeButton" class="Rating">
+                        <button onclick="Toggle1(),ondblclick= countClicks1()" id="btnh1" class="btn"><i
+                                class="fas fa-heart"></i></a></button>
+                        <p id="like"></p>
+                    </div>
+                    <div class="commentBox">
+                        <dialog id="favDialog">
+                            <form method="dialog">
+                                <p>
                                     <label>
-                              Post comments   
-                              <input type="text" name="comment" placeholder="Comment here">
+                                        Post comments
+                                        <input type="text" name="comment" placeholder="Comment here">
                                     </label>
-                                  </p>
-                                  <menu>
+                                </p>
+                                <menu>
                                     <button value="cancel">Delete</button>
                                     <button id="confirmBtn">Post</button>
-                                  </menu>
-                                </form>
-                              </dialog>
-                              <p>
-                                <button id="showDialog"><i
-                                    class="fa-solid fa-comment"></i></button>
-                              </p>
-                              <output></output>
+                                </menu>
+                            </form>
+                        </dialog>
+                        <p>
+                            <button id="showDialog"><i class="fa-solid fa-comment"></i></button>
+                        </p>
+                        <output></output>
+                    </div>
+                    <div class="retweetBox">
+                        <button class="retweetIcon" popovertarget="retweetBox"><i
+                                class="fa-solid fa-retweet"></i></button>
+                        <div id="retweetBox" popover>
+                            <button popovertarget="retweetBox" popovertargetaction="hide"></button>
+                            <input type="text" name="CommentBox" placeholder="Comment here" class="userComment">
+                            <div class="buttons">
+                                <button type="submit" abled id="publishBtn">Retweet</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <article id="post-2">
+                    <div class="profile-container">
+                        <img class="profile" src="assets/img/images/pp-one.png" alt="FA Jane Doe Profile Picture" />
+                        <h2 class="username">Amandine</h2>
+                    </div>
+                    <div class="articletext">
+                        <p class="articletitle">Nouveau projet!.</p>
+                    </div>
+
+                    <img id="laptopPicture" src="assets/img/images/post2.jpg" alt="Laptop" />
+                    <span class="PostDate">Posté le Vendredi 28 Mars 2025</span>
+                    <div class="reactPost2">
+                        <div class="LikeButton">
+                            <button onclick="Toggle2(),ondblclick= countClick2() " id="btnh2" class="btn"><i
+                                    class="fas fa-heart"></i></button>
+                            <p id="heartCount"></p>
+                        </div>
+
+                        <div class="commentBox2">
+                            <dialog id="favDialog2">
+                                <form method="dialog">
+                                    <p>
+                                        <label id="title2">
+                                            Post comment
+
+                                            <input id="input2" type="text" name="comment" placeholder="Comment here">
+                                        </label>
+                                    </p>
+                                    <menu>
+                                        <button value="cancel">Delete</button>
+                                        <button id="confirmBtn2">Post</button>
+                                    </menu>
+                                </form>
+                            </dialog>
+                            <p>
+                                <button id="showDialog2"><i class="fa-solid fa-comment"></i></button>
+                            </p>
+                            <output id="output2"></output>
+                        </div>
                         <div class="retweetBox">
                             <button class="retweetIcon" popovertarget="retweetBox"><i
                                     class="fa-solid fa-retweet"></i></button>
@@ -128,69 +182,16 @@
                                 </div>
                             </div>
                         </div>
-                </div>             
-
-                <article id="post-2">
-                    <div class="profile-container">
-                        <img class="profile" src="assets/img/images/pp-one.png" alt="FA Jane Doe Profile Picture" />
-                        <h2 class="username">Jane Doe</h2>
-                    </div>
-                    <div class="articletext">
-                        <p class="articletitle">A Another Image.</p>
-                    </div>
-
-                    <img id="laptopPicture" src="assets/img/images/post2.jpg" alt="Laptop" />
- <span class="PostDate">Posté le Vendredi 28 Mars 2025</span>
-                    <div class="reactPost2">
-                        <div class="LikeButton">
-                            <button onclick="Toggle2(),ondblclick= countClick2() " id="btnh2" class="btn"><i
-                                    class="fas fa-heart"></i></button>
-                            <p id="heartCount"></p>
-                        </div>
-                           
-                        <div class="commentBox2">
-                            <dialog id="favDialog2">
-                                <form method="dialog">
-                                  <p>
-                                    <label id="title2">
-                              Post comment 
-                                       
-                              <input id="input2" type="text" name="comment" placeholder="Comment here">
-                                    </label>
-                                  </p>
-                                  <menu>
-                                    <button value="cancel">Delete</button>
-                                    <button id="confirmBtn2">Post</button>
-                                  </menu>
-                                </form>
-                              </dialog>
-                              <p>
-                                <button id="showDialog2"><i
-                                    class="fa-solid fa-comment"></i></button>
-                              </p>
-                              <output id="output2"></output>
-                </div> 
-                            <div class="retweetBox">
-                                <button class="retweetIcon" popovertarget="retweetBox"><i
-                                        class="fa-solid fa-retweet"></i></button>
-                                <div id="retweetBox" popover>
-                                    <button popovertarget="retweetBox" popovertargetaction="hide"></button>
-                                    <input type="text" name="CommentBox" placeholder="Comment here" class="userComment">
-                                    <div class="buttons">
-                                        <button type="submit" abled id="publishBtn">Retweet</button>
-                                    </div> 
-                                </div>
-                            </div> 
 
                 </article>
 
                 <article id="post-3">
                     <div class="profile-container">
                         <img class="profile" src="assets/img/images/pp-two.png" alt="A Ayoub Doe Profile Picture" />
-                        <h2 class="username">Ayoub Doe</h2>
+                        <h2 class="username">Ayoub</h2>
                     </div>
                     <div class="articletext">
-                        <p class="articletitle">A Another Video.</p>
+                        <p class="articletitle">Live-coding demain à 18h00.</p>
                     </div>
 
                     <div class="video">
@@ -203,48 +204,47 @@
                                 class="fas fa-heart"></i></button>
                         <p id="Countheart"></p>
 
-                <div class="commentBox3">
-                    <dialog id="favDialog3">
-                        <form method="dialog">
-                          <p>
-                            <label>
-                      Post comment 
-                               
-                      <input id="text3" type="text" name="comment" placeholder="Comment here" >
-                            </label>
-                          </p>
-                          <menu>
-                            <button value="cancel">Delete</button>
-                            <button id="confirmBtn3">Post</button>
-                          </menu>
-                        </form>
-                      </dialog>
-                      <p>
-                        <button id="showDialog3"><i
-                            class="fa-solid fa-comment"></i></button>
-                      </p>
-                      <output id="output3"></output>
-                    </div>
-                    <div class="retweetBox">
-                      <button class="retweetIcon" popovertarget="retweetBox"><i
-                              class="fa-solid fa-retweet"></i></button>
-                      <div id="retweetBox" popover>
-                          <button popovertarget="retweetBox" popovertargetaction="hide"></button>
-                          <input type="text" name="CommentBox" placeholder="Comment here" class="userComment">
-                          <div class="buttons">
-                              <button type="submit" abled id="publishBtn">Retweet</button>
-                          </div>
-                      </div>
-                  </div>
-    </article>         
-            </section>
+                        <div class="commentBox3">
+                            <dialog id="favDialog3">
+                                <form method="dialog">
+                                    <p>
+                                        <label>
+                                            Post comment
 
-            <!--Message des Wilders-->
+                                            <input id="text3" type="text" name="comment" placeholder="Comment here">
+                                        </label>
+                                    </p>
+                                    <menu>
+                                        <button value="cancel">Delete</button>
+                                        <button id="confirmBtn3">Post</button>
+                                    </menu>
+                                </form>
+                            </dialog>
+                            <p>
+                                <button id="showDialog3"><i class="fa-solid fa-comment"></i></button>
+                            </p>
+                            <output id="output3"></output>
+                        </div>
+                        <div class="retweetBox">
+                            <button class="retweetIcon" popovertarget="retweetBox"><i
+                                    class="fa-solid fa-retweet"></i></button>
+                            <div id="retweetBox" popover>
+                                <button popovertarget="retweetBox" popovertargetaction="hide"></button>
+                                <input type="text" name="CommentBox" placeholder="Comment here" class="userComment">
+                                <div class="buttons">
+                                    <button type="submit" abled id="publishBtn">Retweet</button>
+                                </div>
+                            </div>
+                        </div>
+                </article>
+        </section>
 
-            <article id="wilder">
-                <h2 id="messagesWilders">Messages des wilders</h2>
-                <span class="txt1"></span>
-            </article>
+        <!--Message des Wilders-->
+
+        <article id="wilder">
+            <h2 id="messagesWilders">Messages des wilders</h2>
+            <span class="txt1"></span>
+        </article>
     </main>
 
     <!--JavaScript-->
